@@ -1,0 +1,6 @@
+----- Begin Fatal Exception 24-Aug-2020 16:49:53 KST-----------------------
+An exception of category 'PluginNotFound' occurred while
+   [0] Initializing either multi-threaded or single-threaded message logger
+Exception Message:
+Unable to find plugin 'SingleThreadMSPresence' because the category 'CMS EDM Framework Presence' has no known plugins
+----- End Fatal Exception -------------------------------------------------
