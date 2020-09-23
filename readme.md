@@ -7,7 +7,7 @@
 ```bash
 $ ./Gen.sh CMSSW_X_X_X
 ```      
- -  The directory includes **cmdLog**, **profile.sh**  
+ -  The directory includes **cmdLog**, igprof_cpu/porfile.sh , igprof_mem_step3/profile_v2.sh, igprof_mem_step4/profile_v2.sh, logs files  
  -  You can generate events of all datatier using **cmdLog** files  
 
 #### **1.1 About cmdLog file**  
