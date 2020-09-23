@@ -27,14 +27,32 @@ from Validation.Performance.IgProfInfo import customise
 process = customise(process)
 
 ```  
- - **Gen_tool/runall_cpu.sh** can monitoring **cpu usage** and make **igproc_CPU/igProf.N.gz** output  
- - **Gen_tool/runall_mem.sh** can monitoring **memory usage** and make **igproc_meme_stepN/igProd.N.gd** output  
+ - **Gen_tool/runall_cpu.sh** can monitoring **cpu usage** and make **igprof_cpu/igProf.N.gz** output  
+ - **Gen_tool/runall_mem.sh** can monitoring **memory usage** and make **igprof_mem_stepN/igProd.N.gd** output  
  - You can make **sql3** and **res** file from igprof_cpu/profile.sh and igprof_mem_stepN/profile_v2.sh. Just run!  
  - **.sql3 file** is used in **web-based** reports (ex https://jiwoong.web.cern.ch/jiwoong/cgi-bin/igprof-navigator/igprofCPU_CMSSW_11_2_0_pre6PAT )  
  - **.res file** is used in **Ascii-based** report (ex https://jiwoong.web.cern.ch/jiwoong/results/phase2/RES_11_2_0_preX/pre6/RES_PAT_CPU_CMSSW_11_2_0_pre6.res )  
 
 ### 3. Analysis  
  - Go to **Analyze_tool** directory
- - Circle plot: [Reference](https://github.com/fwyzard/circles)  
  
-
+### 4. Circle pie-chart
+ - Circle plot: [Reference](https://github.com/fwyzard/circles)  
+ - First, add the following lines in cmdlog and re-run it  
+```bash
+--customise HLTrigger/Timer/FastTimer.customise_timer_service_singlejob  
+```   
+ - Add the following lines in config files:  
+```python
+# customisation of the process.
+process.load( "HLTrigger.Timer.FastTimerService_cfi")
+process.FastTimerService.writeJSONSummary = cms.untracked.bool(True)
+process.FastTimerService.jsonFileName = cms.untracked.string('OUTPUT_NAME.json')  
+```
+ - Clone the [Reference](https://github.com/fwyzard/circles) to your www directory in LXPLUS sercer  
+ - copy the OUTPUT_NAME.json to circles/web/data  
+ - Following html link can show the Piechart  
+ - Please do not use the ".json" in this link. Just write the name of Json file.  
+```html
+http://jiwoong.web.cern.ch/jiwoong/circles/web/piechart.html?local=false&dataset=OUTPUT_NAME&resource=time_real&colours=default&groups=reco_PhaseII&threshold=0  
+```
