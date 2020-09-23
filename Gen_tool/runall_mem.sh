@@ -17,10 +17,11 @@ cd TimeMemory
 echo "My loc"
 echo $CMSSW_BASE
 
-#step3
-igprof -d -mp -o igprofMEM_step3.mp -D 100evts cmsRun /x5/cms/jwkim/ServiceWork/tmp/$CMSSW_v/src/TimeMemory/step3_RAW2DIGI_L1Reco_RECO_RECOSIM_PU.py >& /dev/null 
+## ---  step3
+igprof -d -t cmsRunGlibC -mp cmsRunGlibC /x5/cms/jwkim/ServiceWork/tmp/$CMSSW_v/src/TimeMemory/step3_RAW2DIGI_L1Reco_RECO_RECOSIM_PU.py >& /dev/null
+
+## ---   step4
+#igprof -d -t cmsRunGlibC -mp cmsRunGlibC /x5/cms/jwkim/ServiceWork/tmp/$CMSSW_v/src/TimeMemory/step4_PAT_PU.py >& /dev/null
 
 
-#step4
-#igprof -d -mp -o igprofMEM_step4.mp -D 100evts cmsRun /x5/cms/jwkim/ServiceWork/tmp/$CMSSW_v/src/TimeMemory/step4_PAT_PU.py >& /dev/null
 

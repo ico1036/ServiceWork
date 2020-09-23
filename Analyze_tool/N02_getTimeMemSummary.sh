@@ -1,25 +1,37 @@
 #!/bin/bash
 
 ### --This code makes summarry of Max RSS VSIZE CPUtime ....
-## step3.log (or step4.log) is needed  
+## Step3.log is needed  
+
+#path_="../$1/src/TimeMemory/logs/step3_AOD.log"
+#path_="../$1/src/TimeMemory/logs/step3.log"
+
+
+## --step3
+#path_="../$1/src/TimeMemory/logs/step3.log"
+
+## --step4
+path_="../$1/src/TimeMemory/logs/step4.log"
+
+
+##--------- mode1
+grep "^MemoryCheck\|^TimeEvent>" $path_  | awk -f getTimeMemSummary.awk 
+
+
+## --step3
+#grep "^MemoryCheck\|^TimeEvent>" $path_  | awk -f getTimeMemSummary.awk > getTimeMemSummary_$1\.txt
+
+## --step4
+#grep "^MemoryCheck\|^TimeEvent>" $path_  | awk -f getTimeMemSummary.awk > getTimeMemSummary_$1\PAT.txt
 
 
 
-## -- step3 AOD
-path_="../$1/src/TimeMemory/logs/step3.log"
 
-## -- step4 MINIAOD
-#path_="../$1/src/TimeMemory/logs/step4.log"
+## --------mode2 -- For making plots
+#grep "^MemoryCheck\|^TimeEvent>" $path_  
 
-
-
-## --------------------- mode1 makes summary mode2 makes input if N05_makehist.py
-
-## mode1
-#grep "^MemoryCheck\|^TimeEvent>" $path_  | awk -f getTimeMemSummary.awk
-
-
-## mode2 -- For make hist
+## --step3
 #grep "^MemoryCheck\|^TimeEvent>" $path_  > SUM_$1\.txt
-grep "^MemoryCheck\|^TimeEvent>" $path_  
+
+## --step4
 #grep "^MemoryCheck\|^TimeEvent>" $path_  > PAT_SUM_$1\.txt

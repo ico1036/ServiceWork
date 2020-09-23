@@ -2,35 +2,32 @@
 
 
 
-#!/bin/bash
 
-
-
-# tur on off step3 or step4 manually in source code
-
-
-cd /x5/cms/jwkim/ServiceWork/tmp/Analysis
-#for i in `seq 1 12`
+## FUll run
+#for i in `seq 1 4`
 #do
 #    idx=`expr $i + 1`
-#    for j in `seq $idx 13`
+#    for j in `seq $idx 5`
 #    do
 #		echo "Start $i $j"
-#        ./N03_timeDiffFromReport.sh CMSSW_11_0_0_pre$i CMSSW_11_0_0_pre$j > compare_timedff/tdf_compare_cpu_11_0_0Pre$i\vsPre$j\.txt
-#        #./N03_timeDiffFromReport.sh CMSSW_11_0_0_pre$i CMSSW_11_0_0_pre$j > compare_timedff/tdf_PAT_compare_cpu_11_0_0Pre$i\vsPre$j\.txt
+#		## --step3
+#		#./N03_timeDiffFromReport.sh CMSSW_11_2_0_pre$i CMSSW_11_2_0_pre$j > compare_timedff_11_2_0/tdf_compare_cpu_11_2_0Pre$i\vsPre$j\.txt
+#        
+#		## --step4
+#		./N03_timeDiffFromReport.sh CMSSW_11_2_0_pre$i CMSSW_11_2_0_pre$j > compare_timedff_11_2_0/tdf_PAT_compare_cpu_11_2_0Pre$i\vsPre$j\.txt
 #    done
 #done
 
 
 
-for i in `seq 1 13`
+target=6
+for i in `seq 1 5`
 do
-
-	echo "START pre$i vs 11_0_0"
-	#AOD
-#    ./N03_timeDiffFromReport.sh CMSSW_11_0_0_pre$i CMSSW_11_0_0 > compare_timedff/tdf_compare_cpu_11_0_0Pre$i\vs11_0_0.txt
-	#PAT
-    ./N03_timeDiffFromReport.sh CMSSW_11_0_0_pre$i CMSSW_11_0_0 > compare_timedff/tdf_PAT_compare_cpu_11_0_0Pre$i\vs11_0_0.txt
-
-
+		echo "Start $i vs $target"
+		## --step3
+		#./N03_timeDiffFromReport.sh CMSSW_11_2_0_pre$i CMSSW_11_2_0_pre$target > compare_timedff_11_2_0/tdf_compare_cpu_11_2_0Pre$i\vsPre$target\.txt
+        
+		## --step4
+		./N03_timeDiffFromReport.sh CMSSW_11_2_0_pre$i CMSSW_11_2_0_pre$target > compare_timedff_11_2_0/tdf_PAT_compare_cpu_11_2_0Pre$i\vsPre$target\.txt
 done
+

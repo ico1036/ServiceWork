@@ -1,22 +1,21 @@
 #!/bin/bash
 
-## This code analyze branch-size of step3 output root files
+## This code analyzing branch size of step3 output root files
 ## The CMSSW enviroment is needed
 
 
-## -- step3 AOD
+## -step3
 #old="../$1/src/TimeMemory/step3.root"
 #new="../$2/src/TimeMemory/step3.root"
 #isPAT=0
 
-
-## -- step4 MINIAOD
+## -step4
 old="../$1/src/TimeMemory/step4.root"
 new="../$2/src/TimeMemory/step4.root"
 isPAT=1
 
 
-## -------------------------------- Args End
+
 
 fA=`echo $old`
 if [ ! -f "${fA}" ]; then
@@ -63,7 +62,7 @@ grep "_RECO\|_PAT" ${os} ${ns} | sed -e "s/${os}:/os /g;s/${ns}:/ns /g" | absMin
 python compareProd.py 
 
 rm ${os} ${ns}
-#rm temp.csv
+rm temp.csv
 
 
 

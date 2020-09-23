@@ -19,10 +19,8 @@ echo "My loc"
 echo $CMSSW_BASE
 
 
-
-#step3
+##--step3
 igprof -d -pp -z -o igprofCPU_step3.gz -t cmsRun cmsRun /x5/cms/jwkim/ServiceWork/tmp/$CMSSW_v/src/TimeMemory/step3_RAW2DIGI_L1Reco_RECO_RECOSIM_PU.py >& /dev/null
 
-
-#step4
+##--step4
 #igprof -d -pp -z -o igprofCPU_step4.gz -t cmsRun cmsRun /x5/cms/jwkim/ServiceWork/tmp/$CMSSW_v/src/TimeMemory/step4_PAT_PU.py > /dev/null
