@@ -49,7 +49,7 @@ process.load( "HLTrigger.Timer.FastTimerService_cfi")
 process.FastTimerService.writeJSONSummary = cms.untracked.bool(True)
 process.FastTimerService.jsonFileName = cms.untracked.string('OUTPUT_NAME.json')  
 ```
- - Clone the [Reference](https://github.com/fwyzard/circles) to your www directory in LXPLUS sercer  
+ - Clone the [Reference](https://github.com/fwyzard/circles) to your www directory in LXPLUS server  
  - copy the OUTPUT_NAME.json to circles/web/data  
  - Following html link can show the Piechart  
  - Please do not use the ".json" in this link. Just write the name of Json file.  
