@@ -1,0 +1,98 @@
+Your SCRAM_ARCH 
+/cvmfs/cms.cern.ch slc7_amd64_gcc900
+Start install CMSSW_11_2_0_pre8 ...
+My loc
+/x5/cms/jwkim/ServiceWork/tmp/CMSSW_11_2_0_pre8
+*** IgProf(35855, 1605591453.134): profiler activated in cmsRunGlibC, main thread id 0x2b365c242800
+*** IgProf(35855, 1605591453.134): profiler options: mem
+*** IgProf(35855, 1605591453.136): exit (0x2b365a565d20): instrumenting 9 bytes into 0x2b365e114004
+*** IgProf(35855, 1605591453.138): _exit (0x2b365a5f1bd0): instrumenting 10 bytes into 0x2b365e115004
+*** IgProf(35855, 1605591453.140): kill (0x2b365a562650): instrumenting 5 bytes into 0x2b365e116004
+*** IgProf(35855, 1605591453.142): pthread_create (0x2b365a317120): instrumenting 6 bytes into 0x2b365e117004
+*** IgProf(35855, 1605591453.142): exit (0x2b365a565d20): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.142): _exit (0x2b365a5f1bd0): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.142): kill (0x2b365a562650): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.142): dlsym(self, 'pthread_create'): cmsRunGlibC: undefined symbol: pthread_create, version GLIBC_2.0
+*** IgProf(35855, 1605591453.142): dlsym(self, 'pthread_create'): cmsRunGlibC: undefined symbol: pthread_create, version GLIBC_2.1
+*** IgProf(35855, 1605591453.142): memory profiler: reporting memory use without allocation overhead
+*** IgProf(35855, 1605591453.144): malloc (0x2b365a5b16b0): instrumenting 5 bytes into 0x2b365e118004
+*** IgProf(35855, 1605591453.146): calloc (0x2b365a5b20d0): instrumenting 5 bytes into 0x2b365e119004
+*** IgProf(35855, 1605591453.148): realloc (0x2b365a5b1bb0): instrumenting 6 bytes into 0x2b365e11a004
+*** IgProf(35855, 1605591453.150): posix_memalign (0x2b365a5b3c20): instrumenting 7 bytes into 0x2b365e11b004
+*** IgProf(35855, 1605591453.152): memalign (0x2b365a5b1f70): instrumenting 9 bytes into 0x2b365e11c004
+*** IgProf(35855, 1605591453.154): pvalloc (0x2b365a5b3510): instrumenting 6 bytes into 0x2b365e11d004
+*** IgProf(35855, 1605591453.156): valloc (0x2b365a5b33b0): instrumenting 8 bytes into 0x2b365e11e004
+*** IgProf(35855, 1605591453.158): free (0x2b365a5b1ad0): instrumenting 7 bytes into 0x2b365e11f004
+*** IgProf(35855, 1605591453.158): dlsym(self, 'tc_new'): (null)
+*** IgProf(35855, 1605591453.200): findsym('tc_new', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.200): dlsym(self, 'tc_new_nothrow'): (null)
+*** IgProf(35855, 1605591453.236): findsym('tc_new_nothrow', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.237): dlsym(self, 'tc_newarray'): (null)
+*** IgProf(35855, 1605591453.273): findsym('tc_newarray', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.273): dlsym(self, 'tc_newarray_nothrow'): (null)
+*** IgProf(35855, 1605591453.307): findsym('tc_newarray_nothrow', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.307): dlsym(self, 'tc_malloc'): (null)
+*** IgProf(35855, 1605591453.341): findsym('tc_malloc', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.341): dlsym(self, 'tc_calloc'): (null)
+*** IgProf(35855, 1605591453.374): findsym('tc_calloc', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.374): dlsym(self, 'tc_realloc'): (null)
+*** IgProf(35855, 1605591453.408): findsym('tc_realloc', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.408): dlsym(self, 'tc_posix_memalign'): (null)
+*** IgProf(35855, 1605591453.444): findsym('tc_posix_memalign', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.444): dlsym(self, 'tc_memalign'): (null)
+*** IgProf(35855, 1605591453.478): findsym('tc_memalign', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.478): dlsym(self, 'tc_pvalloc'): (null)
+*** IgProf(35855, 1605591453.512): findsym('tc_pvalloc', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.512): dlsym(self, 'tc_valloc'): (null)
+*** IgProf(35855, 1605591453.545): findsym('tc_valloc', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.546): dlsym(self, 'tc_free'): (null)
+*** IgProf(35855, 1605591453.578): findsym('tc_free', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.578): dlsym(self, 'tc_cfree'): (null)
+*** IgProf(35855, 1605591453.611): findsym('tc_cfree', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.611): dlsym(self, 'tc_delete'): (null)
+*** IgProf(35855, 1605591453.647): findsym('tc_delete', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.647): dlsym(self, 'tc_delete_nothrow'): (null)
+*** IgProf(35855, 1605591453.680): findsym('tc_delete_nothrow', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.680): dlsym(self, 'tc_deletearray'): (null)
+*** IgProf(35855, 1605591453.711): findsym('tc_deletearray', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.711): dlsym(self, 'tc_deletearray_nothrow'): (null)
+*** IgProf(35855, 1605591453.745): findsym('tc_deletearray_nothrow', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.745): dlsym(self, 'tc_delete_sized'): (null)
+*** IgProf(35855, 1605591453.780): findsym('tc_delete_sized', '(null)', 4): symbol not found
+*** IgProf(35855, 1605591453.780): malloc (0x2b365a5b16b0): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.780): calloc (0x2b365a5b20d0): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.780): realloc (0x2b365a5b1bb0): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.780): posix_memalign (0x2b365a5b3c20): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.780): memalign (0x2b365a5b1f70): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.780): pvalloc (0x2b365a5b3510): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.780): valloc (0x2b365a5b33b0): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.780): free (0x2b365a5b1ad0): hook trampoline already installed, ignoring
+*** IgProf(35855, 1605591453.780): memory profiler enabled
+*** IgProf(35859, 1605591463.513): current process not selected for profiling: process 'sh' does not match 'cmsRunGlibC'
+*** IgProf(35861, 1605591463.554): current process not selected for profiling: process 'sh' does not match 'cmsRunGlibC'
+*** IgProf(35863, 1605591463.590): current process not selected for profiling: process 'sh' does not match 'cmsRunGlibC'
+*** IgProf(35865, 1605591463.626): current process not selected for profiling: process 'sh' does not match 'cmsRunGlibC'
+*** IgProf(35867, 1605591463.708): current process not selected for profiling: process 'sh' does not match 'cmsRunGlibC'
+*** IgProf(35869, 1605591463.746): current process not selected for profiling: process 'sh' does not match 'cmsRunGlibC'
+*** IgProf(35871, 1605591463.758): current process not selected for profiling: process 'sed' does not match 'cmsRunGlibC'
+*** IgProf(35874, 1605591465.439): current process not selected for profiling: process 'sh' does not match 'cmsRunGlibC'
+*** IgProf(35855, 1605591466.124): captured thread id 0x2b36778c4700 for profiling (0x2b3659ee7ae0(0x6f3f820))
+*** IgProf(35877, 1605591466.256): current process not selected for profiling: process 'sh' does not match 'cmsRunGlibC'
+*** IgProf(35877, 1605591466.268): current process not selected for profiling: process '/usr/bin/bash' does not match 'cmsRunGlibC'
+*** IgProf(35880, 1605591466.285): current process not selected for profiling: process 'cat' does not match 'cmsRunGlibC'
+*** IgProf(35855, 1605591469.140): expanding resource hash table for 0x2b3657633660 from 2^20 to 2^22, 548409 used
+17-Nov-2020 14:38:29 KST  Initiating request to open file file:step2.root
+17-Nov-2020 14:39:13 KST  Successfully opened file file:step2.root
+2020-11-17 14:40:15.744914: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+*** IgProf(35855, 1605591615.746): captured thread id 0x2b36bad98700 for profiling (0x2b3659ee7ae0(0x1f9a89a0))
+*** IgProf(35855, 1605591615.749): captured thread id 0x2b36bafd9700 for profiling (0x2b3659ee7ae0(0x1f9addc0))
+*** IgProf(35855, 1605591615.818): captured thread id 0x2b36bb21a700 for profiling (0x2b3659ee7ae0(0x13bf2ef0))
+*** IgProf(35855, 1605591617.205): expanding resource hash table for 0x2b3657633660 from 2^22 to 2^24, 1874324 used
+Begin processing the 1st record. Run 1, Event 3, LumiSection 1 on stream 0 at 17-Nov-2020 14:48:24.130 KST
+*** IgProf(35855, 1605592125.244): expanding resource hash table for 0x2b3657633660 from 2^24 to 2^26, 7491608 used
+%MSG-e TooManyClusters:   PhotonConversionTrajectorySeedProducerFromSingleLeg:photonConvTrajSeedFromSingleLeg  17-Nov-2020 14:50:07 KST Run: 1 Event: 3
+Found too many clusters (181654), bailing out.
+
+%MSG
+*** IgProf(35855, 1605592303.047): dumping state to | gzip -c > IgProf.1.gz
+./runall_mem.sh: line 21: 35855 Segmentation fault      (core dumped) igprof -d -t cmsRunGlibC -mp cmsRunGlibC /x5/cms/jwkim/ServiceWork/tmp/$CMSSW_v/src/TimeMemory/step3_RAW2DIGI_L1Reco_RECO_RECOSIM_PU.py
