@@ -47,7 +47,7 @@ process = customise(process)
 # customisation of the process.
 process.load( "HLTrigger.Timer.FastTimerService_cfi")
 process.FastTimerService.writeJSONSummary = cms.untracked.bool(True)
-process.FastTimerService.jsonFileName = cms.untracked.string('OUTPUT_NAME.json')  
+process.FastTimerService.jsonFileName = cms.untracked.string('resources_RECO_11_2_0_pre11.json')  
 ```
  - Clone the [Reference](https://github.com/fwyzard/circles) to your www directory in LXPLUS server  
  - copy the OUTPUT_NAME.json to circles/web/data  
