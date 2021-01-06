@@ -1,0 +1,708 @@
+Your SCRAM_ARCH 
+/cvmfs/cms.cern.ch slc7_amd64_gcc900
+Start install CMSSW_11_2_0_pre11 ...
+My loc
+/x5/cms/jwkim/ServiceWork/tmp/CMSSW_11_2_0_pre11
+*** IgProf(41849, 1608786742.086): profiler activated in cmsRun, main thread id 0x2ad12c1aa580
+*** IgProf(41849, 1608786742.086): profiler options: igprof:out='|gzip -c>igprofCPU_step3.gz' perf
+*** IgProf(41849, 1608786742.086): timing resolution is 0.005000 s
+*** IgProf(41849, 1608786742.088): exit (0x2ad12a4cbd20): instrumenting 9 bytes into 0x2ad12c1cb004
+*** IgProf(41849, 1608786742.091): _exit (0x2ad12a557bd0): instrumenting 10 bytes into 0x2ad12c1cc004
+*** IgProf(41849, 1608786742.094): kill (0x2ad12a4c8650): instrumenting 5 bytes into 0x2ad12c1cd004
+*** IgProf(41849, 1608786742.097): pthread_create (0x2ad12a27e120): instrumenting 6 bytes into 0x2ad12c1ce004
+*** IgProf(41849, 1608786742.097): exit (0x2ad12a4cbd20): hook trampoline already installed, ignoring
+*** IgProf(41849, 1608786742.097): _exit (0x2ad12a557bd0): hook trampoline already installed, ignoring
+*** IgProf(41849, 1608786742.097): kill (0x2ad12a4c8650): hook trampoline already installed, ignoring
+*** IgProf(41849, 1608786742.097): dlsym(self, 'pthread_create'): cmsRun: undefined symbol: pthread_create, version GLIBC_2.0
+*** IgProf(41849, 1608786742.097): dlsym(self, 'pthread_create'): cmsRun: undefined symbol: pthread_create, version GLIBC_2.1
+*** IgProf(41849, 1608786742.097): performance profiler: measuring process cpu time
+*** IgProf(41849, 1608786742.097): fork (0x2ad12a286b90): jump instruction found, but not a hook target
+*** IgProf(41849, 1608786742.100): fork (0x2ad12a286b90): instrumenting 5 bytes into 0x2ad12c1cf004
+*** IgProf(41849, 1608786742.100): system (0x2ad12a285520): jump instruction found, but not a hook target
+*** IgProf(41849, 1608786742.102): system (0x2ad12a285520): instrumenting 5 bytes into 0x2ad12c1d0004
+*** IgProf(41849, 1608786742.105): pthread_sigmask (0x2ad12a282a00): instrumenting 7 bytes into 0x2ad12c1d1004
+*** IgProf(41849, 1608786742.108): sigaction (0x2ad12a285830): instrumenting 6 bytes into 0x2ad12c1d2004
+*** IgProf(41849, 1608786742.111): close (0x2ad12a284790): instrumenting 7 bytes into 0x2ad12c1d3004
+*** IgProf(41849, 1608786742.114): fclose (0x2ad12a500040): instrumenting 6 bytes into 0x2ad12c1d4004
+*** IgProf(41849, 1608786742.114): performance profiler enabled
+*** IgProf(41852, 1608786747.935): current process not selected for profiling: process 'sh' does not match 'cmsRun'
+*** IgProf(41854, 1608786747.966): current process not selected for profiling: process 'sh' does not match 'cmsRun'
+*** IgProf(41857, 1608786747.993): current process not selected for profiling: process 'sh' does not match 'cmsRun'
+*** IgProf(41860, 1608786748.018): current process not selected for profiling: process 'sh' does not match 'cmsRun'
+*** IgProf(41864, 1608786748.070): current process not selected for profiling: process 'sh' does not match 'cmsRun'
+*** IgProf(41866, 1608786748.095): current process not selected for profiling: process 'sh' does not match 'cmsRun'
+*** IgProf(41868, 1608786748.102): current process not selected for profiling: process 'sed' does not match 'cmsRun'
+*** IgProf(41872, 1608786749.186): current process not selected for profiling: process 'sh' does not match 'cmsRun'
+*** IgProf(41849, 1608786749.531): pthread_sigmask(): prevented profiling signal 27 from being blocked in thread 0x2ad12c1aa580 [handler 0x2ad1278733d0, interval 5000 us]
+*** IgProf(41849, 1608786749.531): pthread_sigmask(): prevented profiling signal 27 from being blocked in thread 0x2ad12c1aa580 [handler 0x2ad1278733d0, interval 5000 us]
+*** IgProf(41849, 1608786749.531): pthread_sigmask(): prevented profiling signal 27 from being blocked in thread 0x2ad12c1aa580 [handler 0x2ad1278733d0, interval 5000 us]
+*** IgProf(41849, 1608786749.531): pthread_sigmask(): prevented profiling signal 27 from being blocked in thread 0x2ad12c1aa580 [handler 0x2ad1278733d0, interval 5000 us]
+*** IgProf(41849, 1608786749.531): pthread_sigmask(): prevented profiling signal 27 from being blocked in thread 0x2ad12c1aa580 [handler 0x2ad1278733d0, interval 5000 us]
+*** IgProf(41849, 1608786749.531): captured thread id 0x2ad14e17f700 for profiling (0x2ad129e4fae0(0x2ad14d04e410))
+*** IgProf(41849, 1608786749.532): pthread_sigmask(): prevented profiling signal 27 from being blocked in thread 0x2ad12c1aa580 [handler 0x2ad1278733d0, interval 5000 us]
+*** IgProf(41849, 1608786749.532): pthread_sigmask(): prevented profiling signal 27 from being blocked in thread 0x2ad12c1aa580 [handler 0x2ad1278733d0, interval 5000 us]
+*** IgProf(41875, 1608786749.624): current process not selected for profiling: process 'sh' does not match 'cmsRun'
+*** IgProf(41875, 1608786749.635): current process not selected for profiling: process '/usr/bin/bash' does not match 'cmsRun'
+*** IgProf(41878, 1608786749.651): current process not selected for profiling: process 'cat' does not match 'cmsRun'
+24-Dec-2020 14:15:16 KST  Initiating request to open file file:step2.root
+24-Dec-2020 14:15:20 KST  Successfully opened file file:step2.root
+2020-12-24 14:15:48.731167: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+*** IgProf(41849, 1608786948.731): captured thread id 0x2ad24e51e700 for profiling (0x2ad179c61dc0(0x2ad183e09fc0))
+*** IgProf(41849, 1608786948.733): captured thread id 0x2ad24f400700 for profiling (0x2ad179c61dc0(0x2ad183e0c080))
+*** IgProf(41849, 1608786948.751): captured thread id 0x2ad252400700 for profiling (0x2ad179c61dc0(0x2ad16cdec100))
+TimeReport> Report activated
+TimeReport> Report columns headings for events: eventnum runnum timetaken
+TimeReport> Report columns headings for modules: eventnum runnum modulelabel modulename timetakeni
+TimeReport> JobTime=1.60879e+09 JobCPU=40.9825
+
+Begin processing the 1st record. Run 1, Event 8, LumiSection 1 on stream 0 at 24-Dec-2020 14:18:24.096 KST
+TimeModule> 8 1 raw2digi_step PathStatusInserter 5.60284e-05
+TimeModule> 8 1 reconstruction_step PathStatusInserter 1.00136e-05
+TimeModule> 8 1 recosim_step PathStatusInserter 6.91414e-06
+TimeModule> 8 1 caloStage1Digis L1TRawToDigi 0.000720978
+TimeModule> 8 1 caloStage1LegacyFormatDigis L1TCaloUpgradeToGCTConverter 0.0013938
+TimeModule> 8 1 gtDigis L1GlobalTriggerRawToDigi 0.00219917
+TimeModule> 8 1 l1extraParticles L1ExtraParticlesProd 0.00129604
+TimeModule> 8 1 L1Reco_step PathStatusInserter 9.05991e-06
+TimeModule> 8 1 TriggerResults TriggerResultInserter 9.05991e-06
+TimeModule> 8 1 MEtoEDMConverter MEtoEDMConverter 1.90735e-06
+TimeModule> 8 1 endjob_step EndPathStatusInserter 6.19888e-06
+TimeModule> 8 1 gmtStage2Digis L1TRawToDigi 0.00329113
+TimeModule> 8 1 caloStage2Digis L1TRawToDigi 0.001544
+TimeModule> 8 1 ticlSeedingGlobal TICLSeedingRegionProducer 9.98974e-05
+TimeModule> 8 1 totemTriggerRawToDigi TotemTriggerRawToDigi 0.000142097
+TimeModule> 8 1 totemTimingRawToDigi TotemVFATRawToDigi 0.000443935
+TimeModule> 8 1 totemTimingRecHits TotemTimingRecHitProducer 9.20296e-05
+TimeModule> 8 1 totemTimingLocalTracks TotemTimingLocalTrackFitter 0.000176907
+TimeModule> 8 1 tcdsDigis TcdsRawToDigi 0.000380039
+TimeModule> 8 1 gtStage2Digis L1TRawToDigi 0.00113797
+TimeModule> 8 1 particleFlowBadHcalPseudoCluster PFBadHcalPseudoClusterProducer 0.00018096
+TimeModule> 8 1 muonGEMDigis GEMRawToDigiModule 0.00153804
+TimeModule> 8 1 gemRecHits GEMRecHitProducer 0.0019381
+TimeModule> 8 1 gemSegments GEMSegmentProducer 0.00463796
+TimeModule> 8 1 hcalDigis HcalRawToDigi 0.00621295
+TimeModule> 8 1 horeco HcalHitReconstructor 0.00199509
+TimeModule> 8 1 particleFlowRecHitHO PFRecHitProducer 0.000586033
+TimeModule> 8 1 particleFlowClusterHO PFClusterProducer 0.000710011
+TimeModule> 8 1 hfprereco HFPreReconstructor 0.00209594
+TimeModule> 8 1 hfreco HFPhase1Reconstructor 0.00352311
+TimeModule> 8 1 particleFlowRecHitHF PFRecHitProducer 0.00415492
+TimeModule> 8 1 particleFlowClusterHF PFClusterProducer 0.045516
+TimeModule> 8 1 hfEMClusters HFEMClusterProducer 0.00154614
+TimeModule> 8 1 hbhereco HBHEPhase1Reconstructor 0.0717859
+TimeModule> 8 1 particleFlowRecHitHBHE PFRecHitProducer 0.00489211
+TimeModule> 8 1 particleFlowClusterHBHE PFClusterProducer 0.00717783
+TimeModule> 8 1 particleFlowClusterHCAL PFMultiDepthClusterProducer 0.0103729
+TimeModule> 8 1 trackerClusterCheck ClusterCheckerEDProducer 0.000371933
+TimeModule> 8 1 siStripDigis SiStripRawToDigiModule 0.00671101
+TimeModule> 8 1 offlineBeamSpot BeamSpotProducer 0.000200987
+TimeModule> 8 1 initialStepTrackingRegions GlobalTrackingRegionFromBeamSpotEDProducer 0.000312805
+TimeModule> 8 1 highPtTripletStepTrackingRegions GlobalTrackingRegionFromBeamSpotEDProducer 3.29018e-05
+TimeModule> 8 1 lowPtQuadStepTrackingRegions GlobalTrackingRegionFromBeamSpotEDProducer 2.7895e-05
+TimeModule> 8 1 lowPtTripletStepTrackingRegions GlobalTrackingRegionFromBeamSpotEDProducer 2.09808e-05
+TimeModule> 8 1 detachedQuadStepTrackingRegions GlobalTrackingRegionFromBeamSpotEDProducer 2.90871e-05
+TimeModule> 8 1 tripletElectronTrackingRegions GlobalTrackingRegionFromBeamSpotEDProducer 2.00272e-05
+TimeModule> 8 1 ecalPreshowerDigis ESRawToDigi 0.000375032
+TimeModule> 8 1 ecalPreshowerRecHit ESRecHitProducer 0.000588894
+TimeModule> 8 1 particleFlowRecHitPS PFRecHitProducer 6.60419e-05
+TimeModule> 8 1 particleFlowClusterPS PFClusterProducer 2.59876e-05
+TimeModule> 8 1 ecalDigis EcalRawToDigi 0.0447731
+TimeModule> 8 1 ecalDetIdToBeRecovered EcalDetIdToBeRecoveredProducer 0.000645876
+TimeModule> 8 1 muonDTDigis DTuROSRawToDigi 0.00421381
+TimeModule> 8 1 dt1DCosmicRecHits DTRecHitProducer 0.104283
+TimeModule> 8 1 dt4DCosmicSegments DTRecSegment4DProducer 0.0190308
+TimeModule> 8 1 dt1DRecHits DTRecHitProducer 0.00671792
+TimeModule> 8 1 dt4DSegments DTRecSegment4DProducer 0.0156059
+TimeModule> 8 1 mtdUncalibratedRecHits MTDUncalibratedRecHitProducer 0.0107188
+TimeModule> 8 1 mtdRecHits MTDRecHitProducer 0.00361514
+TimeModule> 8 1 mtdClusters MTDClusterProducer 0.016942
+TimeModule> 8 1 mtdTrackingRecHits MTDTrackingRecHitProducer 0.012121
+TimeModule> 8 1 hgcalDigis HGCalRawToDigiFake 0.0931659
+TimeModule> 8 1 HGCalUncalibRecHit HGCalUncalibRecHitProducer 0.0541561
+TimeModule> 8 1 HGCalRecHit HGCalRecHitProducer 0.0676079
+TimeModule> 8 1 particleFlowRecHitHGC PFRecHitProducer 0.307727
+TimeModule> 8 1 particleFlowClusterHGCal PFClusterProducer 0.853493
+TimeModule> 8 1 hgcalLayerClusters HGCalLayerClusterProducer 0.854878
+TimeModule> 8 1 ticlLayerTileProducer TICLLayerTileProducer 0.045753
+TimeModule> 8 1 filteredLayerClustersTrkEM FilteredLayerClustersProducer 0.00480795
+TimeModule> 8 1 rpcRecHits RPCRecHitProducer 0.00188613
+TimeModule> 8 1 me0RecHits ME0RecHitProducer 0.00105
+TimeModule> 8 1 me0Segments ME0SegmentProducer 0.0676529
+TimeModule> 8 1 siPhase2Clusters Phase2TrackerClusterizer 0.00583386
+TimeModule> 8 1 bunchSpacingProducer BunchSpacingProducer 7.9155e-05
+TimeModule> 8 1 ecalMultiFitUncalibRecHit EcalUncalibRecHitProducer 0.189832
+TimeModule> 8 1 ecalRecHit EcalRecHitProducer 0.00417089
+TimeModule> 8 1 uncleanedHybridSuperClusters HybridClusterProducer 0.0075531
+TimeModule> 8 1 cleanedHybridSuperClusters HybridClusterProducer 0.0063951
+TimeModule> 8 1 hybridSuperClusters UnifiedSCCollectionProducer 0.000775099
+TimeModule> 8 1 interestingEcalDetIdEB InterestingDetIdCollectionProducer 0.00255108
+TimeModule> 8 1 interestingEcalDetIdEBU InterestingDetIdCollectionProducer 0.000740051
+TimeModule> 8 1 correctedHybridSuperClusters EgammaSCCorrectionMaker 0.00381398
+TimeModule> 8 1 uncleanedOnlyCorrectedHybridSuperClusters EgammaSCCorrectionMaker 2.21729e-05
+TimeModule> 8 1 multi5x5BasicClustersCleaned Multi5x5ClusterProducer 0.000108957
+TimeModule> 8 1 multi5x5SuperClustersCleaned Multi5x5SuperClusterProducer 8.98838e-05
+TimeModule> 8 1 multi5x5BasicClustersUncleaned Multi5x5ClusterProducer 1.19209e-05
+TimeModule> 8 1 multi5x5SuperClustersUncleaned Multi5x5SuperClusterProducer 1.62125e-05
+TimeModule> 8 1 multi5x5SuperClusters UnifiedSCCollectionProducer 2.40803e-05
+TimeModule> 8 1 multi5x5SuperClustersWithPreshower PreshowerPhiClusterProducer 0.000152826
+TimeModule> 8 1 correctedMulti5x5SuperClustersWithPreshower EgammaSCCorrectionMaker 1.78814e-05
+TimeModule> 8 1 selectDigi EcalDigiSelector 0.000423908
+TimeModule> 8 1 multi5x5PreshowerClusterShape PreshowerClusterShapeProducer 8.39233e-05
+TimeModule> 8 1 interestingEcalDetIdEE InterestingDetIdCollectionProducer 1.3113e-05
+TimeModule> 8 1 uncleanedOnlyMulti5x5SuperClustersWithPreshower PreshowerPhiClusterProducer 2.5034e-05
+TimeModule> 8 1 uncleanedOnlyCorrectedMulti5x5SuperClustersWithPreshower EgammaSCCorrectionMaker 1.38283e-05
+TimeModule> 8 1 particleFlowRecHitECAL PFRecHitProducer 0.0294089
+TimeModule> 8 1 particleFlowClusterECALUncorrected PFClusterProducer 0.00469279
+TimeModule> 8 1 ecalDetailedTimeRecHit EcalDetailedTimeRecHitProducer 0.00225902
+TimeModule> 8 1 ecalBarrelClusterFastTimer EcalBarrelClusterFastTimer 0.000896931
+TimeModule> 8 1 particleFlowTimeAssignerECAL PFClusterTimeAssigner 0.000267982
+TimeModule> 8 1 particleFlowClusterECAL CorrectedECALPFClusterProducer 0.157055
+TimeModule> 8 1 particleFlowSuperClusterHGCal PFECALSuperClusterProducer 1.07546
+TimeModule> 8 1 caloTowerForTrk CaloTowersCreator 0.00866103
+TimeModule> 8 1 towerMaker CaloTowersCreator 0.00613499
+TimeModule> 8 1 fixedGridRhoFastjetAllCalo FixedGridRhoProducerFastjet 0.00131607
+TimeModule> 8 1 fixedGridRhoFastjetCentralCalo FixedGridRhoProducerFastjet 0.00039196
+TimeModule> 8 1 HcalHaloData HcalHaloDataProducer 0.00211716
+TimeModule> 8 1 caloMet CaloMETProducer 0.00124502
+TimeModule> 8 1 caloMetBE CaloMETProducer 0.000775099
+TimeModule> 8 1 particleFlowRecHitOOTECAL PFRecHitProducer 0.00235391
+TimeModule> 8 1 particleFlowClusterOOTECALUncorrected PFClusterProducer 0.00179005
+TimeModule> 8 1 particleFlowClusterOOTECAL CorrectedECALPFClusterProducer 0.00365615
+TimeModule> 8 1 EcalHaloData EcalHaloDataProducer 0.00826716
+TimeModule> 8 1 towerMakerWithHO CaloTowersCreator 0.00520301
+TimeModule> 8 1 caloMetBEFO CaloMETProducer 0.000904799
+TimeModule> 8 1 siPixelClustersPreSplitting SiPixelClusterProducer 3.45569
+TimeModule> 8 1 clusterSummaryProducer ClusterSummaryProducer 0.00638795
+TimeModule> 8 1 siPixelClusters SiPixelClusterProducer 0.0975089
+TimeModule> 8 1 MeasurementTrackerEvent MeasurementTrackerEventProducer 0.161473
+TimeModule> 8 1 uncleanedOnlyConversionTrackCandidates ConversionTrackCandidateProducer 0.00112104
+TimeModule> 8 1 uncleanedOnlyCkfInOutTracksFromConversions TrackProducerWithSCAssociation 0.000562906
+TimeModule> 8 1 uncleanedOnlyInOutConversionTrackProducer ConversionTrackProducer 0.000228882
+TimeModule> 8 1 uncleanedOnlyCkfOutInTracksFromConversions TrackProducerWithSCAssociation 6.69956e-05
+TimeModule> 8 1 uncleanedOnlyOutInConversionTrackProducer ConversionTrackProducer 1.69277e-05
+TimeModule> 8 1 uncleanedOnlyInOutOutInConversionTrackMerger ConversionTrackMerger 8.70228e-05
+TimeModule> 8 1 siPixelRecHits SiPixelRecHitConverter 0.096704
+TimeModule> 8 1 initialStepSeedLayers SeedingLayersEDProducer 0.00141215
+TimeModule> 8 1 initialStepHitDoublets HitPairEDProducer 0.157784
+TimeModule> 8 1 siPixelClusterShapeCache SiPixelClusterShapeCacheProducer 0.0368588
+TimeModule> 8 1 initialStepHitQuadruplets CAHitQuadrupletEDProducer 0.906674
+TimeModule> 8 1 initialStepSeeds SeedCreatorFromRegionConsecutiveHitsTripletOnlyEDProducer 0.331683
+TimeModule> 8 1 initialStepTrackCandidates CkfTrackCandidateMaker 2.22179
+TimeModule> 8 1 initialStepTracks TrackProducer 1.10538
+TimeModule> 8 1 initialStepTrackRefsForJets ChargedRefCandidateProducer 0.00190687
+TimeModule> 8 1 firstStepPrimaryVerticesUnsorted PrimaryVertexProducer 0.296541
+TimeModule> 8 1 ak4CaloJetsForTrk FastjetJetProducer 0.00717998
+TimeModule> 8 1 firstStepPrimaryVertices RecoChargedRefCandidatePrimaryVertexSorter 0.054137
+TimeModule> 8 1 pixelPairStepTrackingRegions GlobalTrackingRegionWithVerticesEDProducer 3.00407e-05
+TimeModule> 8 1 initialStepSelector MultiTrackSelector 0.00706291
+TimeModule> 8 1 highPtTripletStepClusters TrackClusterRemoverPhase2 0.00156808
+TimeModule> 8 1 highPtTripletStepSeedLayers SeedingLayersEDProducer 0.00304413
+TimeModule> 8 1 highPtTripletStepHitDoublets HitPairEDProducer 0.080883
+TimeModule> 8 1 highPtTripletStepHitTriplets CAHitTripletEDProducer 0.698819
+TimeModule> 8 1 highPtTripletStepSeeds SeedCreatorFromRegionConsecutiveHitsEDProducer 0.071115
+TimeModule> 8 1 highPtTripletStepTrackCandidates CkfTrackCandidateMaker 1.04617
+TimeModule> 8 1 highPtTripletStepTracks TrackProducer 0.493387
+TimeModule> 8 1 highPtTripletStepSelector MultiTrackSelector 0.00342298
+TimeModule> 8 1 lowPtQuadStepClusters TrackClusterRemoverPhase2 0.00135589
+TimeModule> 8 1 lowPtQuadStepSeedLayers SeedingLayersEDProducer 0.003654
+TimeModule> 8 1 lowPtQuadStepHitDoublets HitPairEDProducer 0.0845039
+TimeModule> 8 1 lowPtQuadStepHitQuadruplets CAHitQuadrupletEDProducer 0.697984
+TimeModule> 8 1 lowPtQuadStepSeeds SeedCreatorFromRegionConsecutiveHitsEDProducer 0.117655
+TimeModule> 8 1 lowPtQuadStepTrackCandidates CkfTrackCandidateMaker 2.9558
+TimeModule> 8 1 lowPtQuadStepTracks TrackProducer 0.897745
+TimeModule> 8 1 lowPtQuadStepSelector MultiTrackSelector 0.00441098
+TimeModule> 8 1 lowPtTripletStepClusters TrackClusterRemoverPhase2 0.00157619
+TimeModule> 8 1 lowPtTripletStepSeedLayers SeedingLayersEDProducer 0.00261021
+TimeModule> 8 1 lowPtTripletStepHitDoublets HitPairEDProducer 0.044435
+TimeModule> 8 1 lowPtTripletStepHitTriplets CAHitTripletEDProducer 0.34334
+TimeModule> 8 1 lowPtTripletStepSeeds SeedCreatorFromRegionConsecutiveHitsEDProducer 0.0188601
+TimeModule> 8 1 lowPtTripletStepTrackCandidates CkfTrackCandidateMaker 0.477397
+TimeModule> 8 1 lowPtTripletStepTracks TrackProducer 0.136511
+TimeModule> 8 1 lowPtTripletStepSelector MultiTrackSelector 0.0013361
+TimeModule> 8 1 detachedQuadStepClusters TrackClusterRemoverPhase2 0.00121689
+TimeModule> 8 1 detachedQuadStepSeedLayers SeedingLayersEDProducer 0.00337195
+TimeModule> 8 1 detachedQuadStepHitDoublets HitPairEDProducer 0.124761
+TimeModule> 8 1 detachedQuadStepHitQuadruplets CAHitQuadrupletEDProducer 2.95151
+TimeModule> 8 1 detachedQuadStepSeeds SeedCreatorFromRegionConsecutiveHitsTripletOnlyEDProducer 0.0375149
+TimeModule> 8 1 detachedQuadStepTrackCandidates CkfTrackCandidateMaker 0.290411
+TimeModule> 8 1 detachedQuadStepTracks TrackProducer 0.204353
+TimeModule> 8 1 detachedQuadStepSelector MultiTrackSelector 0.00284004
+TimeModule> 8 1 detachedQuadStep TrackListMerger 0.0179191
+TimeModule> 8 1 pixelPairStepClusters TrackClusterRemoverPhase2 0.000997066
+TimeModule> 8 1 pixelPairStepSeedLayers SeedingLayersEDProducer 0.000963926
+TimeModule> 8 1 pixelPairStepHitDoublets HitPairEDProducer 0.0484931
+TimeModule> 8 1 pixelPairStepSeeds SeedCreatorFromRegionConsecutiveHitsEDProducer 0.0327022
+TimeModule> 8 1 pixelPairStepTrackCandidates CkfTrackCandidateMaker 0.14324
+TimeModule> 8 1 pixelPairStepTracks TrackProducer 0.0446858
+TimeModule> 8 1 pixelPairStepSelector MultiTrackSelector 0.000556946
+TimeModule> 8 1 earlyGeneralTracks TrackListMerger 1.62306
+TimeModule> 8 1 convClusters TrackClusterRemoverPhase2 0.00103402
+TimeModule> 8 1 convLayerPairs SeedingLayersEDProducer 0.00173903
+TimeModule> 8 1 initialStepSeedClusterMask SeedClusterRemoverPhase2 0.00380301
+TimeModule> 8 1 highPtTripletStepSeedClusterMask SeedClusterRemoverPhase2 0.00150299
+TimeModule> 8 1 pixelPairStepSeedClusterMask SeedClusterRemoverPhase2 0.00129795
+TimeModule> 8 1 tripletElectronSeedLayers SeedingLayersEDProducer 0.00167108
+TimeModule> 8 1 tripletElectronHitDoublets HitPairEDProducer 0.019752
+TimeModule> 8 1 tripletElectronHitTriplets PixelTripletHLTEDProducer 0.47309
+TimeModule> 8 1 tripletElectronSeeds SeedCreatorFromRegionConsecutiveHitsEDProducer 0.61701
+TimeModule> 8 1 tpClusterProducer ClusterTPAssociationProducer 0.92003
+TimeModule> 8 1 quickTrackAssociatorByHits QuickTrackAssociatorByHitsProducer 0.000407934
+TimeModule> 8 1 onlineMetaDataDigis OnlineMetaDataRawToDigi 0.000274897
+TimeModule> 8 1 ctppsPixelDigis CTPPSPixelRawToDigi 0.00015521
+TimeModule> 8 1 ctppsPixelClusters CTPPSPixelClusterProducer 0.000133991
+TimeModule> 8 1 ctppsPixelRecHits CTPPSPixelRecHitProducer 0.000133038
+TimeModule> 8 1 ctppsPixelLocalTracks CTPPSPixelLocalTrackProducer 0.00028801
+TimeModule> 8 1 totemRPRawToDigi TotemVFATRawToDigi 0.000835896
+TimeModule> 8 1 totemRPClusterProducer TotemRPClusterProducer 9.01222e-05
+TimeModule> 8 1 totemRPRecHitProducer TotemRPRecHitProducer 8.79765e-05
+TimeModule> 8 1 totemRPUVPatternFinder TotemRPUVPatternFinder 0.000139952
+TimeModule> 8 1 totemRPLocalTrackFitter TotemRPLocalTrackFitter 0.000193834
+TimeModule> 8 1 ctppsDiamondRawToDigi TotemVFATRawToDigi 0.000132799
+TimeModule> 8 1 ctppsDiamondRecHits CTPPSDiamondRecHitProducer 9.41753e-05
+TimeModule> 8 1 ctppsDiamondLocalTracks CTPPSDiamondLocalTrackFitter 0.000298977
+TimeModule> 8 1 ctppsLocalTrackLiteProducer CTPPSLocalTrackLiteProducer 0.000138998
+TimeModule> 8 1 ctppsProtons CTPPSProtonProducer 0.000145912
+TimeModule> 8 1 muonCSCDigis CSCDCCUnpacker 0.04442
+TimeModule> 8 1 csc2DRecHits CSCRecHitDProducer 0.0318201
+TimeModule> 8 1 cscSegments CSCSegmentProducer 0.0200019
+TimeModule> 8 1 ancientMuonSeed MuonSeedGenerator 0.00390196
+TimeModule> 8 1 standAloneMuons StandAloneMuonProducer 0.0816689
+TimeModule> 8 1 earlyMuons MuonIdProducer 0.33028
+TimeModule> 8 1 muonSeededSeedsInOut MuonReSeeder 0.0301359
+TimeModule> 8 1 muonSeededTrackCandidatesInOut CkfTrackCandidateMaker 0.048645
+TimeModule> 8 1 muonSeededTracksInOut TrackProducer 0.02456
+TimeModule> 8 1 muonSeededTracksInOutSelector MultiTrackSelector 0.000537872
+TimeModule> 8 1 muonSeededSeedsOutIn OutsideInMuonSeeder 0.0412221
+TimeModule> 8 1 muonSeededTrackCandidatesOutIn CkfTrackCandidateMaker 0.00379181
+TimeModule> 8 1 muonSeededTracksOutIn TrackProducer 0.000610113
+TimeModule> 8 1 muonSeededTracksOutInSelector MultiTrackSelector 0.000437975
+TimeModule> 8 1 preDuplicateMergingGeneralTracks TrackListMerger 0.153385
+TimeModule> 8 1 duplicateTrackCandidates DuplicateTrackMerger 0.700811
+TimeModule> 8 1 mergedDuplicateTracks TrackProducer 0.022023
+TimeModule> 8 1 duplicateTrackClassifier TrackCutClassifier 0.000181198
+TimeModule> 8 1 generalTracks DuplicateListMerger 0.0297911
+TimeModule> 8 1 unsortedOfflinePrimaryVertices PrimaryVertexProducer 1.16413
+TimeModule> 8 1 trackWithVertexRefSelectorBeforeSorting TrackWithVertexRefSelector 0.00462079
+TimeModule> 8 1 trackRefsForJetsBeforeSorting ChargedRefCandidateProducer 0.00345016
+TimeModule> 8 1 offlinePrimaryVertices RecoChargedRefCandidatePrimaryVertexSorter 0.158449
+TimeModule> 8 1 particleFlowSuperClusterECAL PFECALSuperClusterProducer 0.013268
+TimeModule> 8 1 interestingEcalDetIdPFEB InterestingDetIdCollectionProducer 0.000859022
+TimeModule> 8 1 interestingEcalDetIdPFEE InterestingDetIdCollectionProducer 9.05991e-06
+TimeModule> 8 1 conversionTrackCandidates ConversionTrackCandidateProducer 0.000697136
+TimeModule> 8 1 ckfInOutTracksFromConversions TrackProducerWithSCAssociation 6.91414e-05
+TimeModule> 8 1 inOutConversionTrackProducer ConversionTrackProducer 1.50204e-05
+TimeModule> 8 1 ckfOutInTracksFromConversions TrackProducerWithSCAssociation 3.29018e-05
+TimeModule> 8 1 outInConversionTrackProducer ConversionTrackProducer 1.21593e-05
+TimeModule> 8 1 inOutOutInConversionTrackMerger ConversionTrackMerger 2.40803e-05
+TimeModule> 8 1 conversions ConvertedPhotonProducer 0.0110629
+TimeModule> 8 1 ak4CaloJets FastjetJetProducer 0.0181758
+TimeModule> 8 1 ak4JetTracksAssociatorAtVertexJPT JetTracksAssociatorAtVertex 0.306936
+TimeModule> 8 1 ak4JetID JetIDProducer 0.00304604
+TimeModule> 8 1 ak4JetTracksAssociatorAtVertex JetTracksAssociatorAtVertex 0.00297904
+TimeModule> 8 1 particleFlowDisplacedVertex PFDisplacedVertexProducer 1.05614
+TimeModule> 8 1 pfDisplacedTrackerVertex PFDisplacedTrackerVertexProducer 0.000133991
+TimeModule> 8 1 generalV0Candidates V0Producer 0.304139
+TimeModule> 8 1 pfV0 PFV0Producer 0.00103498
+TimeModule> 8 1 particleFlowSuperClusterOOTECAL PFECALSuperClusterProducer 0.0114422
+TimeModule> 8 1 interestingEcalDetIdOOTPFEB InterestingDetIdCollectionProducer 0.00059104
+TimeModule> 8 1 interestingEcalDetIdOOTPFEE InterestingDetIdCollectionProducer 7.86781e-06
+TimeModule> 8 1 goodOfflinePrimaryVertices VertexSelector 0.000705957
+TimeModule> 8 1 trackWithVertexRefSelector TrackWithVertexRefSelector 0.00374198
+TimeModule> 8 1 trackRefsForJets ChargedRefCandidateProducer 0.00302696
+TimeModule> 8 1 ak4TrackJets FastjetJetProducer 0.040364
+TimeModule> 8 1 JetPlusTrackAddonSeedReco JetPlusTrackAddonSeedProducer 0.00102401
+TimeModule> 8 1 hfRecoEcalCandidate HFRecoEcalCandidateProducer 0.000579119
+TimeModule> 8 1 inclusiveVertexFinder InclusiveVertexFinder 0.0539861
+TimeModule> 8 1 vertexMerger VertexMerger 0.00152612
+TimeModule> 8 1 trackVertexArbitrator TrackVertexArbitrator 0.183987
+TimeModule> 8 1 inclusiveSecondaryVertices VertexMerger 6.8903e-05
+TimeModule> 8 1 offlinePrimaryVerticesWithBS RecoChargedRefCandidatePrimaryVertexSorter 0.150191
+TimeModule> 8 1 ecalDrivenElectronSeeds ElectronSeedProducer 2.68192
+TimeModule> 8 1 uncleanedOnlyElectronSeeds ElectronSeedProducer 6.19888e-05
+TimeModule> 8 1 uncleanedOnlyElectronCkfTrackCandidates CkfTrackCandidateMaker 0.000121117
+TimeModule> 8 1 uncleanedOnlyElectronGsfTracks GsfTrackProducer 0.00144792
+TimeModule> 8 1 uncleanedOnlyGsfConversionTrackProducer ConversionTrackProducer 3.69549e-05
+TimeModule> 8 1 trackerDrivenElectronSeeds GoodSeedProducer 0.307878
+TimeModule> 8 1 electronMergedSeeds ElectronSeedMerger 0.0172579
+TimeModule> 8 1 electronCkfTrackCandidates CkfTrackCandidateMaker 1.67165
+TimeModule> 8 1 electronGsfTracks GsfTrackProducer 2.37934
+TimeModule> 8 1 gsfConversionTrackProducer ConversionTrackProducer 0.000440121
+TimeModule> 8 1 ootPhotonCore PhotonCoreProducer 0.000157118
+TimeModule> 8 1 ootPhotonsTmp GEDPhotonProducer 0.00057888
+TimeModule> 8 1 ootPhotonEcalPFClusterIsolationProducer PhotonEcalPFClusterIsolationProducer 0.000137091
+TimeModule> 8 1 ootPhotonHcalPFClusterIsolationProducer PhotonHcalPFClusterIsolationProducer 7.98702e-05
+TimeModule> 8 1 photonCore PhotonCoreProducer 0.00193381
+TimeModule> 8 1 photons GEDPhotonProducer 0.010535
+TimeModule> 8 1 interestingGamIsoDetIdEB GamIsoDetIdCollectionProducer 0.00177407
+TimeModule> 8 1 interestingGamIsoDetIdEE GamIsoDetIdCollectionProducer 1.28746e-05
+TimeModule> 8 1 PhotonIDProd PhotonIDProducer 0.000303984
+TimeModule> 8 1 generalConversionTrackProducer ConversionTrackProducer 0.00261998
+%MSG-e TooManyClusters:   PhotonConversionTrajectorySeedProducerFromSingleLeg:photonConvTrajSeedFromSingleLeg  24-Dec-2020 14:19:12 KST Run: 1 Event: 8
+Found too many clusters (177783), bailing out.
+
+%MSG
+TimeModule> 8 1 photonConvTrajSeedFromSingleLeg PhotonConversionTrajectorySeedProducerFromSingleLeg 0.000543118
+TimeModule> 8 1 convTrackCandidates CkfTrackCandidateMaker 0.000790834
+TimeModule> 8 1 convStepTracks TrackProducer 0.000103951
+TimeModule> 8 1 convStepSelector MultiTrackSelector 0.00039506
+TimeModule> 8 1 conversionStepTracks TrackListMerger 3.69549e-05
+TimeModule> 8 1 conversionStepConversionTrackProducer ConversionTrackProducer 1.09673e-05
+TimeModule> 8 1 generalConversionStepConversionTrackMerger ConversionTrackMerger 0.000684977
+TimeModule> 8 1 generalInOutOutInConversionTrackMerger ConversionTrackMerger 0.000396967
+TimeModule> 8 1 gsfGeneralInOutOutInConversionTrackMerger ConversionTrackMerger 0.267447
+TimeModule> 8 1 allConversions ConversionProducer 0.130466
+TimeModule> 8 1 pfConversions PFConversionProducer 0.00028801
+TimeModule> 8 1 uncleanedOnlyPfConversions PFConversionProducer 6.10352e-05
+TimeModule> 8 1 trackExtenderWithMTD TrackExtenderWithMTD 1.72294
+TimeModule> 8 1 unsortedOfflinePrimaryVertices4DnoPID PrimaryVertexProducer 1.09628
+TimeModule> 8 1 trackWithVertexRefSelectorBeforeSorting4DnoPID TrackWithVertexRefSelector 0.00395799
+TimeModule> 8 1 trackRefsForJetsBeforeSorting4DnoPID ChargedRefCandidateProducer 0.00302386
+TimeModule> 8 1 offlinePrimaryVertices4DnoPID RecoChargedRefCandidatePrimaryVertexSorter 0.138252
+TimeModule> 8 1 offlinePrimaryVertices4DnoPIDWithBS RecoChargedRefCandidatePrimaryVertexSorter 0.137593
+TimeModule> 8 1 tofPID4DnoPID TOFPIDProducer 0.038693
+TimeModule> 8 1 unsortedOfflinePrimaryVertices4D PrimaryVertexProducer 1.59074
+TimeModule> 8 1 tofPID TOFPIDProducer 0.038729
+TimeModule> 8 1 trackWithVertexRefSelectorBeforeSorting4D TrackWithVertexRefSelector 0.00374699
+TimeModule> 8 1 trackRefsForJetsBeforeSorting4D ChargedRefCandidateProducer 0.0030489
+TimeModule> 8 1 offlinePrimaryVertices4D RecoChargedRefCandidatePrimaryVertexSorter 0.139562
+TimeModule> 8 1 offlinePrimaryVertices4DWithBS RecoChargedRefCandidatePrimaryVertexSorter 0.138546
+TimeModule> 8 1 mtdTrackQualityMVA MTDTrackQualityMVAProducer 0.0316281
+TimeModule> 8 1 interestingTrackEcalDetIds InterestingTrackEcalDetIdProducer 0.00182796
+TimeModule> 8 1 ticlSeedingTrk TICLSeedingRegionProducer 0.00285411
+TimeModule> 8 1 ticlTrackstersTrkEM TrackstersProducer 0.68022
+TimeModule> 8 1 ticlMultiClustersFromTrackstersTrkEM MultiClustersFromTrackstersProducer 0.00523376
+TimeModule> 8 1 filteredLayerClustersEM FilteredLayerClustersProducer 0.00499916
+TimeModule> 8 1 ticlTrackstersEM TrackstersProducer 0.926077
+TimeModule> 8 1 ticlMultiClustersFromTrackstersEM MultiClustersFromTrackstersProducer 0.00907493
+TimeModule> 8 1 filteredLayerClustersTrk FilteredLayerClustersProducer 0.00245094
+TimeModule> 8 1 ticlTrackstersTrk TrackstersProducer 0.748542
+TimeModule> 8 1 ticlMultiClustersFromTrackstersTrk MultiClustersFromTrackstersProducer 0.0154009
+TimeModule> 8 1 filteredLayerClustersHAD FilteredLayerClustersProducer 0.00233984
+TimeModule> 8 1 ticlTrackstersHAD TrackstersProducer 0.153861
+TimeModule> 8 1 ticlTrackstersMerge TrackstersMergeProducer 0.353417
+TimeModule> 8 1 ticlMultiClustersFromTrackstersMerge MultiClustersFromTrackstersProducer 0.024363
+TimeModule> 8 1 particleFlowClusterHGCalFromMultiCl PFClusterProducer 0.307605
+TimeModule> 8 1 particleFlowSuperClusterHGCalFromMultiCl PFECALSuperClusterProducer 0.096302
+TimeModule> 8 1 ecalDrivenElectronSeedsFromMultiCl ElectronSeedProducer 1.48524
+TimeModule> 8 1 electronMergedSeedsFromMultiCl ElectronSeedMerger 0.0100951
+TimeModule> 8 1 electronCkfTrackCandidatesFromMultiCl CkfTrackCandidateMaker 1.26347
+TimeModule> 8 1 electronGsfTracksFromMultiCl GsfTrackProducer 1.18764
+TimeModule> 8 1 photonCoreFromMultiCl PhotonCoreProducer 0.00334382
+TimeModule> 8 1 photonsFromMultiCl GEDPhotonProducer 0.00777006
+TimeModule> 8 1 ticlMultiClustersFromTrackstersHAD MultiClustersFromTrackstersProducer 0.00664711
+TimeModule> 8 1 dedxHitInfo DeDxHitInfoProducer 0.00120401
+TimeModule> 8 1 trackExtrapolator TrackExtrapolator 0.617638
+TimeModule> 8 1 ak4JetTracksAssociatorAtCaloFace JetTracksAssociatorAtCaloFace 0.0139031
+TimeModule> 8 1 ak4JetExtender JetExtender 0.000699997
+TimeModule> 8 1 dedxHarmonic2 DeDxEstimatorProducer 0.00338507
+TimeModule> 8 1 dedxPixelHarmonic2 DeDxEstimatorProducer 0.017158
+TimeModule> 8 1 trackTimeValueMapProducer TrackTimeValueMapProducer 0.0643089
+TimeModule> 8 1 uncleanedOnlyGeneralConversionTrackProducer ConversionTrackProducer 0.00233698
+TimeModule> 8 1 uncleanedOnlyGeneralInOutOutInConversionTrackMerger ConversionTrackMerger 0.000521898
+TimeModule> 8 1 uncleanedOnlyGsfGeneralInOutOutInConversionTrackMerger ConversionTrackMerger 0.000566006
+TimeModule> 8 1 uncleanedOnlyAllConversions ConversionProducer 0.0156291
+TimeModule> 8 1 globalMuons GlobalMuonProducer 0.112388
+TimeModule> 8 1 glbTrackQual GlobalTrackQualityProducer 0.008533
+TimeModule> 8 1 tevMuons TevMuonProducer 0.112653
+TimeModule> 8 1 muons1stStep MuonIdProducer 2.17555
+TimeModule> 8 1 pfTrack PFTrackProducer 0.132943
+TimeModule> 8 1 pfTrackElec PFElecTkProducer 0.630179
+TimeModule> 8 1 ecalDrivenGsfElectronCores GsfElectronCoreEcalDrivenProducer 0.0194349
+TimeModule> 8 1 ecalDrivenGsfElectrons GsfElectronProducer 0.177453
+TimeModule> 8 1 electronsWithPresel GsfElectronSelector 0.000147104
+TimeModule> 8 1 mvaElectrons ElectronIdMVABased 5.38826e-05
+TimeModule> 8 1 ecalDrivenGsfElectronCoresFromMultiCl GsfElectronCoreEcalDrivenProducer 0.0526609
+TimeModule> 8 1 ecalDrivenGsfElectronsFromMultiCl GsfElectronProducer 0.253168
+TimeModule> 8 1 hgcalTrackCollection HGCalTrackCollectionProducer 0.0189021
+TimeModule> 8 1 particleFlowBlock PFBlockProducer 0.484443
+TimeModule> 8 1 particleFlowEGamma PFEGammaProducer 0.00717092
+TimeModule> 8 1 interestingEcalDetIdRefinedEB InterestingDetIdCollectionProducer 0.000720024
+TimeModule> 8 1 interestingEcalDetIdRefinedEE InterestingDetIdCollectionProducer 1.50204e-05
+TimeModule> 8 1 gedGsfElectronCores GEDGsfElectronCoreProducer 0.00131702
+TimeModule> 8 1 gedGsfElectronsTmp GsfElectronProducer 0.0133288
+TimeModule> 8 1 gedGsfElectronValueMapsTmp GEDGsfElectronValueMapProducer 0.000203848
+TimeModule> 8 1 electronEcalPFClusterIsolationProducer ElectronEcalPFClusterIsolationProducer 0.000446081
+TimeModule> 8 1 electronHcalPFClusterIsolationProducer ElectronHcalPFClusterIsolationProducer 0.000206947
+TimeModule> 8 1 gedPhotonCore GEDPhotonCoreProducer 0.004179
+TimeModule> 8 1 gedPhotonsTmp GEDPhotonProducer 0.0105729
+TimeModule> 8 1 particleFlowTmpBarrel PFProducer 0.241767
+TimeModule> 8 1 photonEcalPFClusterIsolationProducer PhotonEcalPFClusterIsolationProducer 0.000927925
+TimeModule> 8 1 photonHcalPFClusterIsolationProducer PhotonHcalPFClusterIsolationProducer 0.000370979
+TimeModule> 8 1 simPFProducer SimPFProducer 0.0728281
+TimeModule> 8 1 particleFlowTmp PFCandidateListMerger 0.00863099
+TimeModule> 8 1 particleFlowTmpPtrs PFCandidateFwdPtrProducer 0.000947952
+TimeModule> 8 1 pfPileUpIso PFPileUp 0.176223
+TimeModule> 8 1 pfNoPileUpIso TPPFCandidatesOnPFCandidates 0.0471249
+TimeModule> 8 1 pfNoPileUpCandidates PFCandidateFwdPtrCollectionPdgIdFilter 0.00223112
+TimeModule> 8 1 pfAllChargedParticles PFCandidateFwdPtrCollectionPdgIdFilter 0.000413895
+TimeModule> 8 1 muPFIsoDepositChargedAll CandIsoDepositProducer 0.003021
+TimeModule> 8 1 muPFMeanDRIsoValueChargedAll03 CandIsolatorFromDeposits 0.000666857
+TimeModule> 8 1 muPFMeanDRIsoValueChargedAll04 CandIsolatorFromDeposits 0.000257015
+TimeModule> 8 1 muPFSumDRIsoValueChargedAll03 CandIsolatorFromDeposits 0.000221968
+TimeModule> 8 1 muPFSumDRIsoValueChargedAll04 CandIsolatorFromDeposits 0.000228882
+TimeModule> 8 1 muPFIsoValueChargedAll03 CandIsolatorFromDeposits 0.000197172
+TimeModule> 8 1 muPFIsoValueChargedAll04 CandIsolatorFromDeposits 0.000237942
+TimeModule> 8 1 pfAllChargedHadrons PFCandidateFwdPtrCollectionPdgIdFilter 0.000257015
+TimeModule> 8 1 muPFIsoDepositCharged CandIsoDepositProducer 0.000983953
+TimeModule> 8 1 muPFMeanDRIsoValueCharged03 CandIsolatorFromDeposits 0.000138998
+TimeModule> 8 1 muPFMeanDRIsoValueCharged04 CandIsolatorFromDeposits 0.000154972
+TimeModule> 8 1 muPFSumDRIsoValueCharged03 CandIsolatorFromDeposits 0.000126839
+TimeModule> 8 1 muPFSumDRIsoValueCharged04 CandIsolatorFromDeposits 0.000139952
+TimeModule> 8 1 muPFIsoValueCharged03 CandIsolatorFromDeposits 0.000123978
+TimeModule> 8 1 muPFIsoValueCharged04 CandIsolatorFromDeposits 0.000139952
+TimeModule> 8 1 pfAllNeutralHadrons PFCandidateFwdPtrCollectionPdgIdFilter 0.000314951
+TimeModule> 8 1 muPFIsoDepositNeutral CandIsoDepositProducer 0.00209594
+TimeModule> 8 1 muPFMeanDRIsoValueNeutral03 CandIsolatorFromDeposits 0.000212908
+TimeModule> 8 1 muPFMeanDRIsoValueNeutralHighThreshold03 CandIsolatorFromDeposits 0.000196934
+TimeModule> 8 1 muPFMeanDRIsoValueNeutral04 CandIsolatorFromDeposits 0.000544071
+TimeModule> 8 1 muPFMeanDRIsoValueNeutralHighThreshold04 CandIsolatorFromDeposits 0.000251055
+TimeModule> 8 1 muPFSumDRIsoValueNeutral03 CandIsolatorFromDeposits 0.000226974
+TimeModule> 8 1 muPFSumDRIsoValueNeutralHighThreshold03 CandIsolatorFromDeposits 0.00018096
+TimeModule> 8 1 muPFSumDRIsoValueNeutral04 CandIsolatorFromDeposits 0.000232935
+TimeModule> 8 1 muPFSumDRIsoValueNeutralHighThreshold04 CandIsolatorFromDeposits 0.000226021
+TimeModule> 8 1 muPFIsoValueNeutral03 CandIsolatorFromDeposits 0.000191927
+TimeModule> 8 1 muPFIsoValueNeutralHighThreshold03 CandIsolatorFromDeposits 0.000185013
+TimeModule> 8 1 muPFIsoValueNeutral04 CandIsolatorFromDeposits 0.000232935
+TimeModule> 8 1 muPFIsoValueNeutralHighThreshold04 CandIsolatorFromDeposits 0.000223875
+TimeModule> 8 1 pfAllPhotons PFCandidateFwdPtrCollectionPdgIdFilter 0.00136304
+TimeModule> 8 1 muPFIsoDepositGamma CandIsoDepositProducer 0.0159969
+TimeModule> 8 1 muPFMeanDRIsoValueGamma03 CandIsolatorFromDeposits 0.00103092
+TimeModule> 8 1 muPFMeanDRIsoValueGammaHighThreshold03 CandIsolatorFromDeposits 0.000886917
+TimeModule> 8 1 muPFMeanDRIsoValueGamma04 CandIsolatorFromDeposits 0.00152898
+TimeModule> 8 1 muPFMeanDRIsoValueGammaHighThreshold04 CandIsolatorFromDeposits 0.00175691
+TimeModule> 8 1 muPFSumDRIsoValueGamma03 CandIsolatorFromDeposits 0.000908136
+TimeModule> 8 1 muPFSumDRIsoValueGammaHighThreshold03 CandIsolatorFromDeposits 0.000864983
+TimeModule> 8 1 muPFSumDRIsoValueGamma04 CandIsolatorFromDeposits 0.00149512
+TimeModule> 8 1 muPFSumDRIsoValueGammaHighThreshold04 CandIsolatorFromDeposits 0.00165606
+TimeModule> 8 1 muPFIsoValueGamma03 CandIsolatorFromDeposits 0.000926971
+TimeModule> 8 1 muPFIsoValueGammaHighThreshold03 CandIsolatorFromDeposits 0.000818014
+TimeModule> 8 1 muPFIsoValueGamma04 CandIsolatorFromDeposits 0.00142002
+TimeModule> 8 1 muPFIsoValueGammaHighThreshold04 CandIsolatorFromDeposits 0.00152898
+TimeModule> 8 1 pfAllNeutralHadronsAndPhotons PFCandidateFwdPtrCollectionPdgIdFilter 0.0012579
+TimeModule> 8 1 fixedGridRhoFastjetCentralNeutral FixedGridRhoProducerFastjet 0.000627995
+TimeModule> 8 1 pfPileUpAllChargedParticles PFCandidateFwdPtrCollectionPdgIdFilter 0.010025
+TimeModule> 8 1 muPFIsoDepositPU CandIsoDepositProducer 0.048533
+TimeModule> 8 1 muPFMeanDRIsoValuePU03 CandIsolatorFromDeposits 0.00238085
+TimeModule> 8 1 muPFMeanDRIsoValuePU04 CandIsolatorFromDeposits 0.00398111
+TimeModule> 8 1 muPFSumDRIsoValuePU03 CandIsolatorFromDeposits 0.00228906
+TimeModule> 8 1 muPFSumDRIsoValuePU04 CandIsolatorFromDeposits 0.00366116
+TimeModule> 8 1 muPFIsoValuePU03 CandIsolatorFromDeposits 0.00217581
+TimeModule> 8 1 muPFIsoValuePU04 CandIsolatorFromDeposits 0.00367904
+TimeModule> 8 1 fixedGridRhoFastjetCentralChargedPileUp FixedGridRhoProducerFastjet 0.00146604
+TimeModule> 8 1 particleBasedIsolationTmp ParticleBasedIsoProducer 0.00692797
+TimeModule> 8 1 egmElectronIsolationCITK CITKPFIsolationSumProducer 0.00115204
+TimeModule> 8 1 egmElectronIsolationPileUpCITK CITKPFIsolationSumProducer 0.002846
+TimeModule> 8 1 photonIDValueMaps PhotonIDValueMapProducer 0.170716
+TimeModule> 8 1 egmPhotonIsolationCITK CITKPFIsolationSumProducer 0.00255108
+TimeModule> 8 1 fixedGridRhoFastjetAllTmp FixedGridRhoProducerFastjet 0.00222993
+TimeModule> 8 1 gedGsfElectrons GEDGsfElectronFinalizer 0.00257707
+TimeModule> 8 1 interestingGedEleIsoDetIdEB EleIsoDetIdCollectionProducer 0.0028429
+TimeModule> 8 1 interestingGedEleIsoDetIdEE EleIsoDetIdCollectionProducer 1.88351e-05
+TimeModule> 8 1 eidLoose EleIdCutBasedExtProducer 0.000607967
+TimeModule> 8 1 eidRobustHighEnergy EleIdCutBasedExtProducer 0.000101089
+TimeModule> 8 1 eidRobustLoose EleIdCutBasedExtProducer 7.79629e-05
+TimeModule> 8 1 eidRobustTight EleIdCutBasedExtProducer 6.10352e-05
+TimeModule> 8 1 eidTight EleIdCutBasedExtProducer 0.000261784
+TimeModule> 8 1 JPTeidTight EleIdCutBasedExtProducer 0.000263929
+TimeModule> 8 1 gedPhotons GEDPhotonProducer 0.000847101
+TimeModule> 8 1 interestingGedGamIsoDetIdEB GamIsoDetIdCollectionProducer 0.00615811
+TimeModule> 8 1 interestingGedGamIsoDetIdEE GamIsoDetIdCollectionProducer 1.81198e-05
+TimeModule> 8 1 interestingGedEgammaIsoHCALDetId EgammaIsoHcalDetIdCollectionProducer 0.000468016
+TimeModule> 8 1 PhotonIDProdGED PhotonIDProducer 0.000133038
+TimeModule> 8 1 ootPhotons GEDPhotonProducer 6.50883e-05
+TimeModule> 8 1 interestingOotGamIsoDetIdEB GamIsoDetIdCollectionProducer 1.5974e-05
+TimeModule> 8 1 interestingOotGamIsoDetIdEE GamIsoDetIdCollectionProducer 1.09673e-05
+TimeModule> 8 1 interestingOotEgammaIsoHCALDetId EgammaIsoHcalDetIdCollectionProducer 1.21593e-05
+TimeModule> 8 1 reducedHcalRecHits HcalHitSelection 0.00068903
+TimeModule> 8 1 muonEcalDetIds InterestingEcalDetIdProducer 0.000138044
+TimeModule> 8 1 reducedEcalRecHitsEB ReducedRecHitCollectionProducer 0.0128698
+TimeModule> 8 1 reducedEcalRecHitsEE ReducedRecHitCollectionProducer 6.29425e-05
+TimeModule> 8 1 muidTMLastStationOptimizedLowPtLoose MuonSelectionTypeValueMapProducer 0.000216961
+TimeModule> 8 1 muidTMLastStationOptimizedLowPtTight MuonSelectionTypeValueMapProducer 7.60555e-05
+TimeModule> 8 1 muidTM2DCompatibilityLoose MuonSelectionTypeValueMapProducer 9.70364e-05
+TimeModule> 8 1 muidTM2DCompatibilityTight MuonSelectionTypeValueMapProducer 8.70228e-05
+TimeModule> 8 1 muidTrackerMuonArbitrated MuonSelectionTypeValueMapProducer 1.88351e-05
+TimeModule> 8 1 muidTMLastStationAngLoose MuonSelectionTypeValueMapProducer 6.79493e-05
+TimeModule> 8 1 muidGlobalMuonPromptTight MuonSelectionTypeValueMapProducer 1.81198e-05
+TimeModule> 8 1 muidGMStaChiCompatibility MuonSelectionTypeValueMapProducer 1.40667e-05
+TimeModule> 8 1 muidTMLastStationAngTight MuonSelectionTypeValueMapProducer 7.29561e-05
+TimeModule> 8 1 muidGMTkChiCompatibility MuonSelectionTypeValueMapProducer 1.50204e-05
+TimeModule> 8 1 muidTMOneStationAngTight MuonSelectionTypeValueMapProducer 3.88622e-05
+TimeModule> 8 1 muidTMOneStationAngLoose MuonSelectionTypeValueMapProducer 3.09944e-05
+TimeModule> 8 1 muidTMLastStationLoose MuonSelectionTypeValueMapProducer 5.50747e-05
+TimeModule> 8 1 muidTMLastStationTight MuonSelectionTypeValueMapProducer 5.4121e-05
+TimeModule> 8 1 muidTMOneStationTight MuonSelectionTypeValueMapProducer 3.50475e-05
+TimeModule> 8 1 muidTMOneStationLoose MuonSelectionTypeValueMapProducer 2.40803e-05
+TimeModule> 8 1 muidAllArbitrated MuonSelectionTypeValueMapProducer 1.81198e-05
+TimeModule> 8 1 muidGMTkKinkTight MuonSelectionTypeValueMapProducer 1.50204e-05
+TimeModule> 8 1 muidRPCMuLoose MuonSelectionTypeValueMapProducer 1.50204e-05
+TimeModule> 8 1 muonShowerInformation MuonShowerInformationProducer 0.00429893
+TimeModule> 8 1 cosmicsVetoSeeds TrajectorySeedFromMuonProducer 0.000780106
+TimeModule> 8 1 cosmicsVetoTrackCandidates CkfTrackCandidateMaker 0.0692542
+TimeModule> 8 1 cosmicsVetoTracksRaw TrackProducer 0.00795889
+TimeModule> 8 1 cosmicsVetoTracks CosmicTrackSelector 0.000115156
+TimeModule> 8 1 lowPtGsfElePfTracks PFTrackProducer 0.0426469
+TimeModule> 8 1 lowPtGsfElectronSeeds LowPtGsfElectronSeedProducer 1.56727
+TimeModule> 8 1 lowPtGsfEleCkfTrackCandidates CkfTrackCandidateMaker 0.0100229
+TimeModule> 8 1 lowPtGsfEleGsfTracks GsfTrackProducer 0.047425
+TimeModule> 8 1 gsfTracksOpenConversionTrackProducer ConversionTrackProducer 3.69549e-05
+TimeModule> 8 1 gsfTracksOpenConversions ConversionProducer 0.000477076
+TimeModule> 8 1 lowPtGsfElePfGsfTracks PFElecTkProducer 0.0327649
+TimeModule> 8 1 lowPtGsfElectronSuperClusters LowPtGsfElectronSCProducer 0.00531816
+TimeModule> 8 1 lowPtGsfElectronCores LowPtGsfElectronCoreProducer 0.00170207
+TimeModule> 8 1 lowPtGsfElectrons GsfElectronProducer 0.0223851
+TimeModule> 8 1 lowPtGsfElectronSeedValueMaps LowPtGsfElectronSeedValueMapsProducer 0.00017786
+TimeModule> 8 1 lowPtGsfElectronID LowPtGsfElectronIDProducer 0.00395203
+TimeModule> 8 1 lowPtGsfToTrackLinks LowPtGSFToTrackLinker 0.000113964
+TimeModule> 8 1 uncleanedOnlyPfTrack PFTrackProducer 0.0398011
+TimeModule> 8 1 uncleanedOnlyPfTrackElec PFElecTkProducer 2.00272e-05
+TimeModule> 8 1 uncleanedOnlyGsfElectronCores GsfElectronCoreEcalDrivenProducer 1.21593e-05
+TimeModule> 8 1 uncleanedOnlyGsfElectrons GsfElectronProducer 0.000699043
+TimeModule> 8 1 muIsoDepositTk MuIsoDepositCopyProducer 0.000531912
+TimeModule> 8 1 muIsoDepositJets MuIsoDepositCopyProducer 5.4121e-05
+TimeModule> 8 1 muIsoDepositCalByAssociatorTowers MuIsoDepositCopyProducer 9.01222e-05
+TimeModule> 8 1 refittedStandAloneMuons StandAloneMuonProducer 0.0447879
+TimeModule> 8 1 displacedMuonSeeds CosmicMuonSeedGenerator 0.00145102
+TimeModule> 8 1 displacedStandAloneMuons StandAloneMuonProducer 0.119497
+TimeModule> 8 1 earlyDisplacedMuons MuonIdProducer 0.206744
+TimeModule> 8 1 muonSeededSeedsOutInDisplaced OutsideInMuonSeeder 0.000890017
+TimeModule> 8 1 muonSeededTrackCandidatesOutInDisplaced CkfTrackCandidateMaker 0.000221014
+TimeModule> 8 1 muonSeededTracksOutInDisplaced TrackProducer 6.38962e-05
+TimeModule> 8 1 muonSeededTracksOutInDisplacedClassifier TrackCutClassifier 1.81198e-05
+TimeModule> 8 1 preDuplicateMergingDisplacedTracks TrackCollectionMerger 2.88486e-05
+TimeModule> 8 1 duplicateDisplacedTrackCandidates DuplicateTrackMerger 1.88351e-05
+TimeModule> 8 1 mergedDuplicateDisplacedTracks TrackProducer 3.09944e-05
+TimeModule> 8 1 duplicateDisplacedTrackClassifier TrackCutClassifier 9.05991e-06
+TimeModule> 8 1 displacedTracks DuplicateListMerger 2.28882e-05
+TimeModule> 8 1 displacedGlobalMuons GlobalMuonProducer 0.000275135
+TimeModule> 8 1 CosmicMuonSeed CosmicMuonSeedGenerator 0.000487089
+TimeModule> 8 1 cosmicMuons1Leg CosmicMuonProducer 0.186243
+TimeModule> 8 1 muonsFromCosmics1Leg MuonIdProducer 0.00789905
+TimeModule> 8 1 cosmicsVeto CosmicsMuonIdProducer 0.162522
+TimeModule> 8 1 muons MuonProducer 0.00561786
+TimeModule> 8 1 muonReducedTrackExtras MuonReducedTrackExtraProducer 0.000481844
+TimeModule> 8 1 JetPlusTrackZSPCorJetAntiKt4 JetPlusTrackProducer 0.114928
+TimeModule> 8 1 muonMETValueMapProducer MuonMETValueMapProducer 0.093029
+TimeModule> 8 1 caloMetM MuonMET 0.000313997
+TimeModule> 8 1 particleFlow PFLinker 0.0137069
+TimeModule> 8 1 chargedHadronPFTrackIsolation ChargedHadronPFTrackIsolationProducer 0.000933886
+TimeModule> 8 1 ak4PFJets FastjetJetProducer 0.035733
+TimeModule> 8 1 recoTauAK4PFJets08Region RecoTauJetRegionProducer 0.0102119
+TimeModule> 8 1 ak4PFJetsRecoTauChargedHadrons PFRecoTauChargedHadronProducer 0.089525
+TimeModule> 8 1 ak4PFJetsLegacyHPSPiZeros RecoTauPiZeroProducer 0.00261402
+TimeModule> 8 1 ak4PFJetTracksAssociatorAtVertex JetTracksAssociatorAtVertex 0.00441694
+TimeModule> 8 1 pfRecoTauTagInfoProducer PFRecoTauTagInfoProducer 0.0294569
+TimeModule> 8 1 combinatoricRecoTaus RecoTauProducer 0.194477
+TimeModule> 8 1 hpsSelectionDiscriminator PFRecoTauDiscriminationByHPSSelection 0.00381088
+TimeModule> 8 1 hpsPFTauProducerSansRefs RecoTauCleaner 0.01424
+TimeModule> 8 1 hpsPFTauProducer RecoTauPiZeroUnembedder 0.000624895
+TimeModule> 8 1 hpsPFTauDiscriminationByDecayModeFindingNewDMs PFRecoTauDiscriminationByHPSSelection 0.000162125
+TimeModule> 8 1 hpsPFTauDiscriminationByDeadECALElectronRejection PFRecoTauDiscriminationAgainstElectronDeadECAL 0.00162792
+TimeModule> 8 1 hpsPFTauPrimaryVertexProducer PFTauPrimaryVertexProducer 0.0113161
+TimeModule> 8 1 hpsPFTauBasicDiscriminators PFRecoTauDiscriminationByIsolationContainer 0.18029
+TimeModule> 8 1 hpsPFTauBasicDiscriminatorsdR03 PFRecoTauDiscriminationByIsolationContainer 0.180149
+TimeModule> 8 1 hpsPFTauDiscriminationByMVA6rawElectronRejection PFRecoTauDiscriminationAgainstElectronMVA6 0.0924921
+TimeModule> 8 1 hpsPFTauDiscriminationByMVA6ElectronRejection RecoTauDiscriminantCutMultiplexer 0.0903471
+TimeModule> 8 1 hpsPFTauDiscriminationByDecayModeFinding PFRecoTauDiscriminationByHPSSelection 0.000411987
+TimeModule> 8 1 hpsPFTauDiscriminationByDecayModeFindingOldDMs PFRecoTauDiscriminationByHPSSelection 0.00029397
+TimeModule> 8 1 hpsPFTauSecondaryVertexProducer PFTauSecondaryVertexProducer 0.00116706
+TimeModule> 8 1 hpsPFTauTransverseImpactParameters PFTauTransverseImpactParameters 0.00256395
+TimeModule> 8 1 hpsPFTauDiscriminationByIsolationMVArun2v1DBdR03oldDMwLTraw PFRecoTauDiscriminationByMVAIsolationRun2 0.0210111
+TimeModule> 8 1 hpsPFTauDiscriminationByIsolationMVArun2v1DBdR03oldDMwLT RecoTauDiscriminantCutMultiplexer 0.0332689
+TimeModule> 8 1 hpsPFTauDiscriminationByIsolationMVArun2v1DBnewDMwLTraw PFRecoTauDiscriminationByMVAIsolationRun2 0.0193172
+TimeModule> 8 1 hpsPFTauDiscriminationByIsolationMVArun2v1DBnewDMwLT RecoTauDiscriminantCutMultiplexer 0.0278289
+TimeModule> 8 1 hpsPFTauDiscriminationByIsolationMVArun2v1DBoldDMwLTraw PFRecoTauDiscriminationByMVAIsolationRun2 0.0205898
+TimeModule> 8 1 hpsPFTauDiscriminationByIsolationMVArun2v1DBoldDMwLT RecoTauDiscriminantCutMultiplexer 0.027843
+TimeModule> 8 1 hpsPFTauDiscriminationByMuonRejection3 PFRecoTauDiscriminationAgainstMuon2Container 0.00218511
+TimeModule> 8 1 particleFlowPtrs PFCandidateFwdPtrProducer 0.00251794
+TimeModule> 8 1 pfPileUpJME PFPileUp 0.204084
+TimeModule> 8 1 pfNoPileUpJME TPPFCandidatesOnPFCandidates 0.0408649
+TimeModule> 8 1 ak4PFJetsCHS FastjetJetProducer 0.0257649
+TimeModule> 8 1 ak4JetTracksAssociatorAtVertexPF JetTracksAssociatorAtVertex 0.00419307
+TimeModule> 8 1 ak4JetTracksAssociatorExplicit JetTracksAssociatorExplicit 0.00113702
+TimeModule> 8 1 pfImpactParameterTagInfos CandIPProducer 0.1266
+%MSG-w TwoTrackMinimumDistance:   CandSecondaryVertexProducer:pfSecondaryVertexTagInfos 24-Dec-2020 14:19:35 KST  Run: 1 Event: 8
+comparing track with itself!
+%MSG
+%MSG-w TwoTrackMinimumDistance:   CandSecondaryVertexProducer:pfSecondaryVertexTagInfos 24-Dec-2020 14:19:35 KST  Run: 1 Event: 8
+Computation HelixHelix::CAIR failed.
+%MSG
+%MSG-w TwoTrackMinimumDistance:   CandSecondaryVertexProducer:pfSecondaryVertexTagInfos 24-Dec-2020 14:19:35 KST  Run: 1 Event: 8
+comparing track with itself!
+%MSG
+%MSG-w TwoTrackMinimumDistance:   CandSecondaryVertexProducer:pfSecondaryVertexTagInfos 24-Dec-2020 14:19:35 KST  Run: 1 Event: 8
+Computation HelixHelix::CAIR failed.
+%MSG
+%MSG-w TwoTrackMinimumDistance:   CandSecondaryVertexProducer:pfSecondaryVertexTagInfos 24-Dec-2020 14:19:35 KST  Run: 1 Event: 8
+comparing track with itself!
+%MSG
+%MSG-w TwoTrackMinimumDistance:   CandSecondaryVertexProducer:pfSecondaryVertexTagInfos 24-Dec-2020 14:19:35 KST  Run: 1 Event: 8
+Computation HelixHelix::CAIR failed.
+%MSG
+TimeModule> 8 1 pfSecondaryVertexTagInfos CandSecondaryVertexProducer 0.0255129
+TimeModule> 8 1 pfCombinedSecondaryVertexV2BJetTags JetTagProducer 0.195594
+TimeModule> 8 1 pfSimpleSecondaryVertexHighEffBJetTags JetTagProducer 0.000207901
+TimeModule> 8 1 pfGhostTrackVertexTagInfos CandSecondaryVertexProducer 0.0262742
+TimeModule> 8 1 pfGhostTrackBJetTags JetTagProducer 0.005656
+TimeModule> 8 1 pfJetBProbabilityBJetTags JetTagProducer 0.000226021
+TimeModule> 8 1 pfJetProbabilityBJetTags JetTagProducer 0.000173092
+TimeModule> 8 1 pfTrackCountingHighEffBJetTags JetTagProducer 0.000241995
+TimeModule> 8 1 softPFMuonsTagInfos SoftPFMuonTagInfoProducer 0.000610113
+TimeModule> 8 1 softPFMuonBJetTags JetTagProducer 0.00041008
+TimeModule> 8 1 softPFElectronsTagInfos SoftPFElectronTagInfoProducer 0.00075388
+TimeModule> 8 1 softPFElectronBJetTags JetTagProducer 0.000444889
+TimeModule> 8 1 pixelClusterTagInfos PixelClusterTagInfoProducer 0.0281711
+TimeModule> 8 1 puppi PuppiProducer 0.306618
+TimeModule> 8 1 ak4PFJetsPuppi FastjetJetProducer 0.0134299
+TimeModule> 8 1 ak8PFJetsPuppi FastjetJetProducer 0.0148902
+TimeModule> 8 1 ak8PFJetsPuppiConstituents PFJetConstituentSelector 0.000309944
+TimeModule> 8 1 ak8PFJetsPuppiSoftDrop FastjetJetProducer 0.0172372
+TimeModule> 8 1 ak8PFJetsPuppiSoftDropMass RecoJetDeltaRValueMapProducer 0.000118971
+TimeModule> 8 1 fixedGridRhoAll FixedGridRhoProducer 0.00432801
+TimeModule> 8 1 fixedGridRhoFastjetAll FixedGridRhoProducerFastjet 0.00210118
+TimeModule> 8 1 fixedGridRhoFastjetCentral FixedGridRhoProducerFastjet 0.00209188
+TimeModule> 8 1 inclusiveCandidateVertexFinder InclusiveCandidateVertexFinder 0.158765
+TimeModule> 8 1 candidateVertexMerger CandidateVertexMerger 0.00120902
+TimeModule> 8 1 candidateVertexArbitrator CandidateVertexArbitrator 0.284956
+TimeModule> 8 1 inclusiveCandidateSecondaryVertices CandidateVertexMerger 2.81334e-05
+TimeModule> 8 1 pfInclusiveSecondaryVertexFinderTagInfos CandSecondaryVertexProducer 0.00184393
+TimeModule> 8 1 pfChargeBJetTags JetTagProducer 0.0656528
+TimeModule> 8 1 pfCombinedInclusiveSecondaryVertexV2BJetTags JetTagProducer 0.00353003
+TimeModule> 8 1 pfCombinedMVAV2BJetTags JetTagProducer 0.014055
+TimeModule> 8 1 pfDeepCSVTagInfos DeepNNTagInfoProducer 0.00302577
+TimeModule> 8 1 pfDeepCMVATagInfos DeepCMVATagInfoProducer 0.000728846
+TimeModule> 8 1 pfDeepCMVAJetTags DeepFlavourJetTagsProducer 0.00199199
+TimeModule> 8 1 pfDeepCSVJetTags DeepFlavourJetTagsProducer 0.00171208
+TimeModule> 8 1 pfSimpleInclusiveSecondaryVertexHighEffBJetTags JetTagProducer 0.000113964
+TimeModule> 8 1 inclusiveCandidateVertexFinderCvsL InclusiveCandidateVertexFinder 0.0717771
+TimeModule> 8 1 candidateVertexMergerCvsL CandidateVertexMerger 0.00153494
+TimeModule> 8 1 candidateVertexArbitratorCvsL CandidateVertexArbitrator 0.410425
+TimeModule> 8 1 inclusiveCandidateSecondaryVerticesCvsL CandidateVertexMerger 3.60012e-05
+TimeModule> 8 1 pfInclusiveSecondaryVertexFinderCvsLTagInfos CandSecondaryVertexProducer 0.00223112
+TimeModule> 8 1 pfCombinedCvsBJetTags JetTagProducer 0.565957
+TimeModule> 8 1 pfCombinedCvsLJetTags JetTagProducer 1.50751
+TimeModule> 8 1 particleBasedIsolation ParticleBasedIsoProducer 0.00339198
+TimeModule> 8 1 particleFlowForChargedMET ParticleFlowForChargedMETProducer 0.00444794
+TimeModule> 8 1 pfChMet PFMETProducer 0.000547886
+TimeModule> 8 1 pfMet PFMETProducer 0.00143194
+TimeModule> 8 1 puppiNoLep PuppiProducer 0.190791
+TimeModule> 8 1 pfMetPuppi PFMETProducer 0.00168395
+TimeModule> 8 1 cosmicMuons CosmicMuonProducer 0.120013
+TimeModule> 8 1 muonsFromCosmics MuonIdProducer 0.00596189
+TimeModule> 8 1 CSCHaloData CSCHaloDataProducer 0.037137
+TimeModule> 8 1 GlobalHaloData GlobalHaloDataProducer 0.00215483
+TimeModule> 8 1 BeamHaloSummary BeamHaloSummaryProducer 0.000148058
+TimeModule> 8 1 logErrorHarvester LogErrorHarvester 0.000643015
+TimeModule> 8 1 muonAssociatorByHitsNoSimHitsHelper MuonToTrackingParticleAssociatorEDProducer 0.00196695
+TimeModule> 8 1 muonSimClassifier MuonSimClassifier 1.39833
+TimeModule> 8 1 scalersRawToDigi ScalersRawToDigi 9.10759e-05
+TimeModule> 8 1 AODSIMoutput PoolOutputModule 18.7122
+TimeModule> 8 1 AODSIMoutput_step EndPathStatusInserter 1.90735e-05
+%MSG-w MemoryCheck:  PostProcessPath 24-Dec-2020 14:19:59 KST Run: 1 Event: 8
+MemoryCheck: event : VSIZE 5781.53 0 RSS 3704.12 0
+%MSG
+TimeEvent> 8 1 95.7098
+*** IgProf(41849, 1608787199.806): dumping state to | gzip -c > IgProf.1.gz
+./runall_cpu.sh: line 23: 41849 Segmentation fault      (core dumped) igprof -d -pp -z -o igprofCPU_step3.gz -t cmsRun cmsRun /x5/cms/jwkim/ServiceWork/tmp/$CMSSW_v/src/TimeMemory/step3_RAW2DIGI_L1Reco_RECO_RECOSIM_PU.py
+mv: cannot stat 'CMSSW_11_2_0_pre11/src/TimeMemory/*.gz': No such file or directory
