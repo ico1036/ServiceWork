@@ -87,9 +87,12 @@ new_df[comul] = new_df[comul].str.replace(',','').astype('float')
 ### step2
 
 old_df_for_str2  = old_df.dropna()
-indexes_for_str2 = old_df['Symbol name'].str.contains('doEvent').dropna()
-list_str2 = old_df_for_str2[indexes_for_str2]['Symbol name'].values.tolist()
+old_indexes_for_str2 = old_df['Symbol name'].str.contains('doEvent').dropna()
+old_list_str2 = old_df_for_str2[old_indexes_for_str2]['Symbol name'].values.tolist()
 
+new_df_for_str2  = new_df.dropna()
+new_indexes_for_str2 = new_df['Symbol name'].str.contains('doEvent').dropna()
+new_list_str2 = new_df_for_str2[new_indexes_for_str2]['Symbol name'].values.tolist()
 
 
 
@@ -103,12 +106,12 @@ global_new_df = pd.DataFrame(columns=columnlist)
 
 
 
-for str2 in list_str2:
+for old_str2, new_str2 in zip(old_list_str2,new_list_str2):
 	link_list=[]
 	for link in old_soup.findAll("a"):
 	    if 'href' in link.attrs:
 	        name=link.text
-	        if name.startswith(str2):
+	        if name.startswith(old_str2):
 	            link_list.append(link.attrs['href'])
 	            #print(link.attrs['href'])
 	            
@@ -120,7 +123,7 @@ for str2 in list_str2:
 	for link in new_soup.findAll("a"):
 	    if 'href' in link.attrs:
 	        name=link.text
-	        if name.startswith(str2):
+	        if name.startswith(new_str2):
 	            link_list.append(link.attrs['href'])
 	            #print(link.attrs['href'])
 	
@@ -150,7 +153,7 @@ for str2 in list_str2:
 	
 	old_str2_df = pd.DataFrame(columns=columnlist, data=alldfcontents)
 	old_str2_df = old_str2_df.dropna()
-	stIdx_old	= old_str2_df.loc[old_str2_df['name'] == str2].index[0] -1 
+	stIdx_old	= old_str2_df.loc[old_str2_df['name'] == old_str2].index[0] -1 
 	old_str2_df = old_str2_df[stIdx_old:]
 	
 	
@@ -167,7 +170,7 @@ for str2 in list_str2:
 	
 	new_str2_df = pd.DataFrame(columns=columnlist, data=alldfcontents)
 	new_str2_df = new_str2_df.dropna()
-	stIdx_new	= new_str2_df.loc[new_str2_df['name'] == str2].index[0] -1
+	stIdx_new	= new_str2_df.loc[new_str2_df['name'] == new_str2].index[0] -1
 	new_str2_df = new_str2_df[stIdx_new:]
 	
 	global_old_df = pd.concat([global_old_df,old_str2_df],ignore_index=True)

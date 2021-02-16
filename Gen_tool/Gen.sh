@@ -135,3 +135,28 @@ EOF
 
 mkdir logs
 
+cat << EOF >> sendtoCERN.sh
+scp cmdLog  jiwoong@lxplus.cern.ch:/eos/user/j/jiwoong/www/results/phase2/cmdlog_$1
+scp igprof_cpu/*.res jiwoong@lxplus.cern.ch:/eos/user/j/jiwoong/www/results/phase2
+scp igprof_cpu/*.sql3 jiwoong@lxplus.cern.ch:/eos/user/j/jiwoong/www/cgi-bin/data
+EOF
+
+
+cat << EOF >> sendtoCERN_MEM.sh
+#!/bin/bash
+
+## --Send MEM LIVE sql3 files
+
+scp igprof_mem_step3/*.sql3 jiwoong@lxplus.cern.ch:/eos/user/j/jiwoong/www/cgi-bin/data/$CMSSW_v/igprof_new_step3
+scp igprof_mem_step4/*.sql3 jiwoong@lxplus.cern.ch:/eos/user/j/jiwoong/www/cgi-bin/data/$CMSSW_v/igprof_new_step4
+
+## --Send MEM LIVE res files
+
+CMSSW_ver=${CMSSW_v:(-4)}
+scp igprof_mem_step3/*.res jiwoong@lxplus.cern.ch:/eos/user/j/jiwoong/www/results/phase2/RES_11_1_0_preX/$CMSSW_ver
+scp igprof_mem_step4/*.res jiwoong@lxplus.cern.ch:/eos/user/j/jiwoong/www/results/phase2/RES_11_1_0_preX/$CMSSW_ver
+EOF
+
+
+
+

@@ -1,12 +1,12 @@
 #!/bin/bash
 
 ## Args: old and new version of step3.log
-ol="/x5/cms/jwkim/ServiceWork/tmp/$1/src/TimeMemory/logs/step3.log"
-sl="/x5/cms/jwkim/ServiceWork/tmp/$2/src/TimeMemory/logs/step3.log"
+#ol="/x5/cms/jwkim/ServiceWork/tmp/$1/src/TimeMemory/logs/step3.log"
+#sl="/x5/cms/jwkim/ServiceWork/tmp/$2/src/TimeMemory/logs/step3.log"
 
 ## Args: old and new version of step4.log
-#ol="../$1/src/TimeMemory/logs/step4.log"
-#sl="../$2/src/TimeMemory/logs/step4.log"
+ol="../$1/src/TimeMemory/logs/step4.log"
+sl="../$2/src/TimeMemory/logs/step4.log"
 
 if [ ! -f "${ol}" ]; then
     echo "Couldn't file input log file ${ol}"

@@ -3,9 +3,6 @@
 ### --This code makes summarry of Max RSS VSIZE CPUtime ....
 ## Step3.log is needed  
 
-#path_="../$1/src/TimeMemory/logs/step3_AOD.log"
-#path_="../$1/src/TimeMemory/logs/step3.log"
-
 
 ## --step3
 #path_="../$1/src/TimeMemory/logs/step3.log"
