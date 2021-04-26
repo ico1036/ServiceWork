@@ -1,8 +1,7 @@
 ## RECO monitoring and integration  
+ - ###  Python modules that measure the CPU and Memory usages of new relased CMS software
+ - ![Uploading Capture.PNG…]() 
  - ### Website: http://jiwoong.web.cern.ch/jiwoong/  
- - Python modules that measure the CPU and Memory usages of new relased CMS software
- -  
-
 ---
 
 ### 1. Generate events  
